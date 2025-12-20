@@ -1,5 +1,20 @@
 import { useMemo, useState } from "react";
 
+import pic1 from "../../assets/images/image0.jpeg";
+import pic2 from "../../assets/images/image2.jpeg";
+import pic4 from "../../assets/images/image4.jpeg";
+import pic5 from "../../assets/images/image5.jpeg";
+import pic6 from "../../assets/images/image6.jpeg";
+import pic7 from "../../assets/images/image7.jpeg";
+import pic8 from "../../assets/images/image8.png";
+import pic9 from "../../assets/images/image9.png";
+import pic10 from "../../assets/images/image10.jpeg";
+import pic11 from "../../assets/images/image11.jpeg";
+
+
+
+
+
 type FunItem = {
   title: string;
   desc: string;
@@ -34,16 +49,16 @@ function pickStamp(seed: string) {
 export default function FunContent() {
   const interests: FunItem[] = useMemo(
     () => [
-      { title: "tkd", desc: "heres my family", image: "../../assets/images/image11.jpeg" },
-      { title: "tyler", desc: "best concert ive been too", image: "../../assets/images/image10.jpeg" },
-      { title: "taiwan", desc: "am i a donut?", image: "../../assets/images/image9.png" },
-      { title: "climbing", desc: "this was a fun v3", image: "../../assets/images/image8.png" },
-      { title: "concert", desc: "billie concert was fire", image: "../../assets/images/image7.png" },
-      { title: "golf", desc: "i suck at golf but its for thanksgivng", image: "../../assets/images/image6.jpeg" },
-      { title: "death valley", desc: "me and my brother in the dunes", image: "../../assets/images/image0.jpeg" },
-      { title: "ebike", desc: "probably the best thing ive ever spent my money on", image: "../../assets/images/image2.jpeg" },
-      { title: "bali", desc: "rice patties in bali", image: "../../assets/images/image4.jpeg" },
-      { title: "atv", desc: "going through waterfalls and rivers and things", image: "../../assets/images/image5.jpeg" },
+      { title: "tkd", desc: "heres my family", image: {pic11} },
+      { title: "tyler", desc: "best concert ive been too", image: {pic10} },
+      { title: "taiwan", desc: "am i a donut?", image: {pic9} },
+      { title: "climbing", desc: "this was a fun v3", image: {pic8} },
+      { title: "concert", desc: "billie concert was fire", image: {pic7} },
+      { title: "golf", desc: "i suck at golf but its for thanksgivng", image: {pic6} },
+      { title: "death valley", desc: "me and my brother in the dunes", image: {pic1} },
+      { title: "ebike", desc: "probably the best thing ive ever spent my money on", image: {pic2} },
+      { title: "bali", desc: "rice patties in bali", image: {pic4} },
+      { title: "atv", desc: "going through waterfalls and rivers and things", image: {pic5} },
     ],
     []
   );
