@@ -16,41 +16,26 @@ const retroBtn =
   "border-t border-l border-t-white border-l-white border-b border-r border-b-[#404040] border-r-[#404040] " +
   "active:border-t-[#404040] active:border-l-[#404040] active:border-b-white active:border-r-white";
 
-function pickStamp(seed: string) {
-  const stamps = [
-    { text: "VIBES", cls: "bg-[#ffeb3b] text-black" },
-    { text: "COOL", cls: "bg-[#00e5ff] text-black" },
-    { text: "ARCHIVED", cls: "bg-[#ff5252] text-white" },
-    { text: "CERTIFIED", cls: "bg-[#69f0ae] text-black" },
-    { text: "LOL", cls: "bg-[#b388ff] text-black" },
-    { text: "W", cls: "bg-[#ff9800] text-black" },
-  ];
-  // deterministic-ish based on title
-  let h = 0;
-  for (let i = 0; i < seed.length; i++) h = (h * 31 + seed.charCodeAt(i)) >>> 0;
-  return stamps[h % stamps.length];
-}
 
 export default function FunContent() {
   const interests: FunItem[] = useMemo(
     () => [
-      { title: "tkd", desc: "heres my family", image: "/images/image11.jpeg" },
-      { title: "tyler", desc: "best concert ive been too", image: "/images/image10.jpeg" },
-      { title: "taiwan", desc: "am i a donut?", image: "/images/image9.png" },
-      { title: "climbing", desc: "this was a fun v3", image: "/images/image8.png" },
-      { title: "concert", desc: "billie concert was fire", image: "/images/image7.png" },
-      { title: "golf", desc: "i suck at golf but its for thanksgivng", image: "/images/image6.jpeg" },
-      { title: "death valley", desc: "me and my brother in the dunes", image: "/images/image1.jpeg" },
-      { title: "ebike", desc: "probably the best thing ive ever spent my money on", image: "/images/image2.jpeg" },
-      { title: "bali", desc: "rice patties in bali", image: "/images/image4.jpeg" },
-      { title: "atv", desc: "going through waterfalls and rivers", image: "/images/image5.jpeg" },
+      { title: "tkd", desc: "heres my family", image: "../../assets/images/image11.jpeg" },
+      { title: "tyler", desc: "best concert ive been too", image: "../../assets/images/image10.jpeg" },
+      { title: "taiwan", desc: "am i a donut?", image: "../../assets/images/image9.png" },
+      { title: "climbing", desc: "this was a fun v3", image: "../../assets/images/image8.png" },
+      { title: "concert", desc: "billie concert was fire", image: "../../assets/images/image7.png" },
+      { title: "golf", desc: "i suck at golf but its for thanksgivng", image: "../../assets/images/image6.jpeg" },
+      { title: "death valley", desc: "me and my brother in the dunes", image: "../../assets/images/image0.jpeg" },
+      { title: "ebike", desc: "probably the best thing ive ever spent my money on", image: "../../assets/images/image2.jpeg" },
+      { title: "bali", desc: "rice patties in bali", image: "../../assets/images/image4.jpeg" },
+      { title: "atv", desc: "going through waterfalls and rivers and things", image: "../../assets/images/image5.jpeg" },
     ],
     []
   );
 
   const [selected, setSelected] = useState(0);
   const active = interests[selected];
-  const stamp = pickStamp(active.title);
 
   const next = () => setSelected((s) => (s + 1) % interests.length);
   const prev = () => setSelected((s) => (s - 1 + interests.length) % interests.length);
@@ -65,9 +50,7 @@ export default function FunContent() {
               <h1 className="text-[22px] md:text-[28px] font-extrabold text-black">
                 Fun Stuff
               </h1>
-              <p className="text-[13px] text-[#333] mt-1">
-                a retro photo viewer of random life moments ✨
-              </p>
+
             </div>
 
             <div className="hidden md:block text-[11px] font-mono text-[#333] text-right">
@@ -84,8 +67,7 @@ export default function FunContent() {
             <button className={retroBtn} onClick={next}>
               Next
             </button>
-            <span className={retroBtn}>Shuffle (fake)</span>
-            <span className={retroBtn}>Export (fake)</span>
+
           </div>
         </div>
       </div>
@@ -153,16 +135,7 @@ export default function FunContent() {
                 <div className="text-[11px] text-white/80 truncate">
                   {selected + 1}/{interests.length} • album: FUN
                 </div>
-              </div>
-              <span
-                className={[
-                  "text-[10px] font-bold px-2 py-1 border border-black",
-                  stamp.cls,
-                ].join(" ")}
-              >
-                {stamp.text}
-              </span>
-            </div>
+
 
             {/* Photo viewer area */}
             <div className="bg-white p-4 text-black">
@@ -186,9 +159,7 @@ export default function FunContent() {
                     />
 
                     {/* corner “timestamp” */}
-                    <div className="absolute bottom-2 right-2 bg-black/60 text-white text-[10px] font-mono px-2 py-1">
-                      2002/09/07  03:14PM
-                    </div>
+
                   </div>
                 </div>
 
@@ -203,8 +174,7 @@ export default function FunContent() {
                         </div>
                       </div>
                       <div className="text-[11px] font-mono text-[#333] text-right whitespace-nowrap">
-                        <div>SIZE: 3.2MB</div>
-                        <div>MODE: VIEW</div>
+
                       </div>
                     </div>
                   </div>

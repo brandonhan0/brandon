@@ -90,7 +90,7 @@ export default function ContactContent() {
             </div>
 
             <div className="hidden md:block text-[11px] font-mono text-[#333] text-right">
-              <div>APP: ADDRESSBOOK.EXE</div>
+              <div>APP: CONTACTS.EXE</div>
               <div>USER: brandon</div>
             </div>
           </div>

@@ -110,7 +110,7 @@ function BrowserWindow({
     });
   };
 
-  const fakeUrl = `portfolio.dev/${title.toLowerCase().replace(/\s+/g, "-")}`;
+  const fakeUrl = `dragontrainer26.com/${title.toLowerCase().replace(/\s+/g, "-")}`;
 
   // Classic beveled “3D” border: light top/left, dark bottom/right
   const bevelOuter =
