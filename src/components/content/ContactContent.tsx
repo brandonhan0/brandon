@@ -54,8 +54,8 @@ export default function ContactContent() {
       {
         id: "github",
         label: "GitHub",
-        value: "github.com/(add-username)",
-        href: "https://github.com/",
+        value: "github.com/brandonhan0",
+        href: "https://github.com/brandonhan0",
         icon: <Github className="w-4 h-4" />,
         stamp: "CODE",
       },
@@ -86,9 +86,7 @@ export default function ContactContent() {
               <h1 className="text-[22px] md:text-[28px] font-extrabold text-black">
                 Contact Me
               </h1>
-              <p className="text-[13px] text-[#333] mt-1">
-                address book / dial-up style (but it works in 2025)
-              </p>
+
             </div>
 
             <div className="hidden md:block text-[11px] font-mono text-[#333] text-right">
@@ -97,12 +95,6 @@ export default function ContactContent() {
             </div>
           </div>
 
-          <div className="mt-3 flex flex-wrap gap-2">
-            <span className={retroBtn}>File</span>
-            <span className={retroBtn}>Edit</span>
-            <span className={retroBtn}>Tools</span>
-            <span className={retroBtn}>Help</span>
-          </div>
         </div>
       </div>
 
@@ -168,9 +160,7 @@ export default function ContactContent() {
                 <div className="font-bold text-[13px] truncate">
                   {active.label}.card
                 </div>
-                <div className="text-[11px] text-white/80 truncate">
-                  STATUS: READY • MODE: CONNECT
-                </div>
+   
               </div>
               <div className="flex items-center gap-2">
                 <StatusLight on />
@@ -200,8 +190,7 @@ export default function ContactContent() {
 
                     <div className="text-[11px] font-mono text-[#333] space-y-1">
                       <div>LAST SEEN: just now</div>
-                      <div>PROTOCOL: HTTPS</div>
-                      <div>SECURITY: ✅</div>
+
                     </div>
                   </div>
                 </div>
@@ -240,17 +229,14 @@ export default function ContactContent() {
                       </span>
                     </button>
 
-                    <button className={retroBtn} onClick={() => alert("beep boop 📞")}>
-                      Dial (fake)
-                    </button>
+
                   </div>
 
                   <div className={["bg-[#c0c0c0] p-2", bevelOuter].join(" ")}>
                     <div className={["bg-white p-3", bevelInner].join(" ")}>
                       <div className="text-[12px] font-bold mb-2">message.txt</div>
                       <p className="text-[13px] text-[#333] leading-relaxed">
-                        best way to reach me is email. if you’re contacting about a project /
-                        internship / collab, include what you’re building + timeline + what you need.
+                        best way to reach me is email. i check it alot. or like linked in too but i dont check it as much.
                       </p>
                     </div>
                   </div>
@@ -265,11 +251,7 @@ export default function ContactContent() {
               </div>
             </div>
 
-            {/* Footer */}
-            <div className="bg-[#c0c0c0] px-3 py-2 text-[11px] font-mono text-black flex justify-between">
-              <span>Handshake: SUCCESS</span>
-              <span>Signal: ████░</span>
-            </div>
+
           </div>
         </div>
       </div>
