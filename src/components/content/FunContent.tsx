@@ -183,7 +183,9 @@ export default function FunContent() {
                     />
 
                     {/* corner “timestamp” */}
-
+                    <div className="absolute bottom-2 right-2 bg-black/60 text-white text-[10px] font-mono px-2 py-1">
+                      2002/09/07  03:14PM
+                    </div>
                   </div>
                 </div>
 
