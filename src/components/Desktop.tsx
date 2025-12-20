@@ -100,7 +100,7 @@ function Desktop({ onOpenApp }: DesktopProps) {
 
   // Layout constants (tweak these)
   const cell = isDesktop
-    ? { cellW: 140, cellH: 160, padding: 24 } // desktop spacing
+    ? { cellW: 140, cellH: 160, padding: 10 } // desktop spacing
     : { cellW: 120, cellH: 150, padding: 16 }; // mobile spacing
 
   const layoutKey = isDesktop ? "desktop" : "mobile";

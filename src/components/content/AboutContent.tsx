@@ -1,4 +1,7 @@
 import React from "react";
+import me from "../../assets/images/image0.jpeg";
+import snake from "../../assets/images/image3.jpeg";
+
 
 const bevelOuter =
   "border-t-2 border-l-2 border-t-white border-l-white border-b-2 border-r-2 border-b-[#404040] border-r-[#404040]";
@@ -57,9 +60,7 @@ export default function AboutContent() {
               <h1 className="text-[22px] md:text-[28px] font-extrabold text-black">
                 About Me
               </h1>
-              <p className="text-[13px] text-[#333] mt-1">
-                A little blog-style page so you can get the vibe.
-              </p>
+
             </div>
 
             <div className="hidden md:block text-[11px] font-mono text-[#333] text-right">
@@ -77,12 +78,11 @@ export default function AboutContent() {
       <div className="mt-4 grid grid-cols-1 lg:grid-cols-[1.1fr_0.9fr] gap-4">
         {/* Left: blog text */}
         <div className="space-y-4">
-          <NoteBlock title="hello_world.txt">
+          <NoteBlock title="about_me.txt">
             <p>
-              hello! my name’s brandon and i’m a computer engineering student at
-              cal poly. i like building stuff, learning fast, and then building
-              it again but better. i’m happiest when i’m outside, moving, or
-              making something that feels real.
+            hello! my names brandon and i am a 3rd year computer engineering student attending calpoly. i like to make things, i like being outside, i like exercising, and i like to play music. i am part of a big family and i have an even bigger dog.
+            i like trying new things and i frequently push myself into situations that i am unfamiliar with. this has led me to fall in love with many things, i like climbing, i like hiking biking, i like basketball, i like to go to the gym, and i like meeting new people. i also love eating food.
+
             </p>
 
             <div className="mt-4">
@@ -96,30 +96,6 @@ export default function AboutContent() {
             </div>
           </NoteBlock>
 
-          <NoteBlock title="what_im_into.txt">
-            <p>
-              i like trying new things and i push myself into situations i’m not
-              familiar with. it’s fun, it’s uncomfortable, and it’s how i end up
-              finding things i genuinely love.
-            </p>
-
-            <div className="mt-4">
-              <div className="font-bold text-[12px] mb-2">currently on rotation:</div>
-              <ul className="list-disc pl-5 space-y-1 text-[13px]">
-                <li>climbing / hiking / biking</li>
-                <li>basketball + gym</li>
-                <li>meeting new people</li>
-                <li>eating food (important)</li>
-              </ul>
-            </div>
-          </NoteBlock>
-
-          <NoteBlock title="funny_story.log">
-            <p>
-              this snake was actually about to eat me but it’s ok i am alive.
-              (i’m adding this here because it’s too funny not to include.)
-            </p>
-          </NoteBlock>
 
           {/* Footer bar */}
           <div className={["bg-[#c0c0c0] px-3 py-2", bevelOuter].join(" ")}>
@@ -133,40 +109,18 @@ export default function AboutContent() {
         {/* Right: photos + little side “widgets” */}
         <div className="space-y-4">
           <PhotoBlock
-            src="/images/image0.jpeg"
-            caption="me (photo.exe)"
+            src={me}
+            caption="pho"
           />
 
           <PhotoBlock
-            src="/images/image3.jpeg"
-            caption="snake encounter (do not recommend)"
+            src={snake}
+            caption="this snake was actually about to eat me but its ok i am alive."
+
           />
 
-          <div className={["bg-[#c0c0c0] p-2", bevelOuter].join(" ")}>
-            <div className={["bg-white p-3", bevelInner].join(" ")}>
-              <div className="text-[12px] font-bold text-black mb-2">
-                status panel
-              </div>
-              <div className="text-[12px] font-mono text-[#333] space-y-1">
-                <div>energy: high</div>
-                <div>outside time: needed</div>
-                <div>currently building: something</div>
-                <div>mood: 😎</div>
-              </div>
-            </div>
-          </div>
 
-          <div className={["bg-[#c0c0c0] p-2", bevelOuter].join(" ")}>
-            <div className={["bg-white p-3", bevelInner].join(" ")}>
-              <div className="text-[12px] font-bold text-black mb-2">
-                small note
-              </div>
-              <p className="text-[13px] text-[#333] leading-relaxed">
-                if you ever want to talk about firmware, embedded systems, or
-                building weird projects, i’m always down.
-              </p>
-            </div>
-          </div>
+
         </div>
       </div>
     </div>
