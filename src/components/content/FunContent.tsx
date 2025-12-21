@@ -1,9 +1,5 @@
 import { useMemo, useState } from "react";
 
-
-
-
-
 type FunItem = {
   title: string;
   desc: string;
@@ -20,20 +16,7 @@ const retroBtn =
   "border-t border-l border-t-white border-l-white border-b border-r border-b-[#404040] border-r-[#404040] " +
   "active:border-t-[#404040] active:border-l-[#404040] active:border-b-white active:border-r-white";
 
-// function pickStamp(seed: string) {
-//   const stamps = [
-//     { text: "VIBES", cls: "bg-[#ffeb3b] text-black" },
-//     { text: "COOL", cls: "bg-[#00e5ff] text-black" },
-//     { text: "ARCHIVED", cls: "bg-[#ff5252] text-white" },
-//     { text: "CERTIFIED", cls: "bg-[#69f0ae] text-black" },
-//     { text: "LOL", cls: "bg-[#b388ff] text-black" },
-//     { text: "W", cls: "bg-[#ff9800] text-black" },
-//   ];
-//   // deterministic-ish based on title
-//   let h = 0;
-//   for (let i = 0; i < seed.length; i++) h = (h * 31 + seed.charCodeAt(i)) >>> 0;
-//   return stamps[h % stamps.length];
-// }
+
 
 export default function FunContent() {
   const interests: FunItem[] = useMemo(
@@ -118,14 +101,7 @@ export default function FunContent() {
                       <div className="text-[13px] font-bold leading-tight">
                         {item.title}
                       </div>
-                      {/* <span
-                        className={[
-                          "text-[10px] font-bold px-2 py-0.5 border border-black",
-                          isActive ? "bg-white text-black" : itemStamp.cls,
-                        ].join(" ")}
-                      >
-                        {itemStamp.text}
-                      </span> */}
+
                     </div>
                     <div
                       className={[
