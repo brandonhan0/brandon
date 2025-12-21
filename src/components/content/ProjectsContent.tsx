@@ -1,14 +1,18 @@
 import { useMemo, useState } from "react";
 
-import skull from "../../assets/icons/skull.gif";
-import kiki from "../../assets/icons/kiki.gif";
+import java from "../../assets/images/image12.png";
+import memory from "../../assets/images/image13.png";
+import todo from "../../assets/images/image14.png";
+import natpark from "../../assets/images/image15.png";
+//import java from "../../assets/images/image12.png";
+
 
 
 type ProjectItem = {
   title: string;
   description: string;
   tech: string[];
-  images: string[]; // ✅ multiple images per project
+  images: string[];
 };
 
 const bevelOuter =
@@ -64,28 +68,28 @@ function ProjectsContent() {
         description:
           "simple todo list app for ios with add/edit/delete/complete tasks and local storage.",
         tech: ["Swift", "SwiftUI"],
-        images: [skull, kiki, skull, kiki],
+        images: [todo],
       },
       {
         title: "fpga memory game",
         description:
           "led memory game on an fpga with fsm, seven seg, leds, controller, and accumulator.",
         tech: ["SystemVerilog", "Vivado", "Basys3"],
-        images: [skull, kiki, skull, kiki],
+        images: [memory],
       },
       {
         title: "virtual world",
         description:
           "virtual world game in java with 150+ animations, manual/auto play, a* pathing, inventories, and tasks.",
         tech: ["Java", "Jupiter"],
-        images: [skull, kiki, skull, kiki,skull, kiki, skull, kiki],
+        images: [java],
       },
       {
         title: "national park guide app",
         description:
           "swiftui + mapkit gallery for national parks with map annotations and detail view.",
         tech: ["Swift", "MapKit"],
-        images: [skull, kiki, skull, kiki],
+        images: [natpark],
       },
     ],
     []
