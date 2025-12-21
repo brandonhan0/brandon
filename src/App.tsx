@@ -1,13 +1,19 @@
-import { useState } from 'react';
-import Desktop from './components/Desktop';
-import BrowserWindow from './components/BrowserWindow';
-import AboutContent from './components/content/AboutContent';
-import ProjectsContent from './components/content/ProjectsContent';
-import WorkContent from './components/content/WorkContent';
-import FunContent from './components/content/FunContent';
-import ContactContent from './components/content/ContactContent';
+import { useState } from "react";
+import Desktop from "./components/Desktop";
+import BrowserWindow from "./components/BrowserWindow";
+import LoginScreen from "./components/LoginScreen";
 
-export type AppType = 'about' | 'projects' | 'work' | 'fun' | 'contact';
+import AboutContent from "./components/content/AboutContent";
+import ProjectsContent from "./components/content/ProjectsContent";
+import WorkContent from "./components/content/WorkContent";
+import FunContent from "./components/content/FunContent";
+import ContactContent from "./components/content/ContactContent";
+
+// pick images you actually have:
+import loginBg from "./assets/backgrounds/background.png";
+import profilePic from "./assets/images/image0.jpeg";
+
+export type AppType = "about" | "projects" | "work" | "fun" | "contact";
 
 interface OpenWindow {
   id: string;
@@ -17,11 +23,14 @@ interface OpenWindow {
 }
 
 function App() {
+  // ✅ show login first
+  const [entered, setEntered] = useState(false);
+
   const [openWindows, setOpenWindows] = useState<OpenWindow[]>([]);
   const [maxZIndex, setMaxZIndex] = useState(1);
 
   const openApp = (type: AppType, title: string) => {
-    const existingWindow = openWindows.find(w => w.type === type);
+    const existingWindow = openWindows.find((w) => w.type === type);
     if (existingWindow) {
       bringToFront(existingWindow.id);
       return;
@@ -38,32 +47,46 @@ function App() {
   };
 
   const closeWindow = (id: string) => {
-    setOpenWindows(openWindows.filter(w => w.id !== id));
+    setOpenWindows(openWindows.filter((w) => w.id !== id));
   };
 
   const bringToFront = (id: string) => {
     const newZIndex = maxZIndex + 1;
-    setOpenWindows(openWindows.map(w =>
-      w.id === id ? { ...w, zIndex: newZIndex } : w
-    ));
+    setOpenWindows(
+      openWindows.map((w) => (w.id === id ? { ...w, zIndex: newZIndex } : w))
+    );
     setMaxZIndex(newZIndex);
   };
 
   const getContent = (type: AppType) => {
     switch (type) {
-      case 'about':
+      case "about":
         return <AboutContent />;
-      case 'projects':
+      case "projects":
         return <ProjectsContent />;
-      case 'work':
+      case "work":
         return <WorkContent />;
-      case 'fun':
+      case "fun":
         return <FunContent />;
-      case 'contact':
+      case "contact":
         return <ContactContent />;
     }
   };
 
+  // ✅ If not entered, show login screen only
+  if (!entered) {
+    return (
+      <LoginScreen
+        onEnter={() => setEntered(true)}
+        backgroundImage={loginBg}
+        profileImage={profilePic}
+        username="Brandon Han"
+        subtitle="retro desktop portfolio"
+      />
+    );
+  }
+
+  // ✅ Once entered, show your normal desktop + windows
   return (
     <div className="relative w-full h-screen overflow-hidden">
       <Desktop onOpenApp={openApp} />
