@@ -1,11 +1,10 @@
 import React, { useEffect } from "react";
 
-
 type LoginScreenProps = {
   onEnter: () => void;
-  backgroundImage: string; // imported asset or /public path
-  logoImage: string;       // imported asset or /public path
-  showScanlines?: boolean; // optional
+  backgroundImage: string;
+  logoImage: string;
+  showScanlines?: boolean;
 };
 
 const retroBtn =
@@ -19,7 +18,6 @@ export default function LoginScreen({
   logoImage,
   showScanlines = false,
 }: LoginScreenProps) {
-  // Optional: keyboard Enter works too
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
       if (e.key === "Enter") onEnter();
@@ -37,10 +35,8 @@ export default function LoginScreen({
         backgroundPosition: "center",
       }}
     >
-      {/* Optional overlay to help logo/button pop (tweak or remove) */}
       <div className="absolute inset-0 bg-black/0" />
 
-      {/* Optional scanlines for extra vibe (off by default) */}
       {showScanlines && (
         <div
           className="pointer-events-none absolute inset-0 opacity-[0.10]"
@@ -53,7 +49,7 @@ export default function LoginScreen({
 
       {/* Centered content */}
       <div className="relative z-10 h-full w-full flex items-center justify-center">
-        <div className="flex flex-col items-center gap-10">
+        <div className="flex flex-col items-center gap-6 text-center">
           <img
             src={logoImage}
             alt="Logo"
@@ -61,13 +57,17 @@ export default function LoginScreen({
             draggable={false}
           />
 
+          {/* 👇 NEW TEXT */}
+          <div className="text-white text-lg sm:text-xl md:text-2xl font-semibold tracking-wide drop-shadow-lg">
+            welcome to my portfolio
+          </div>
+
           <button onClick={onEnter} className={retroBtn}>
             ENTER
           </button>
         </div>
       </div>
 
-      {/* tiny helper: pixelated rendering when you want it */}
       <style>{`
         .image-rendering-pixelated {
           image-rendering: pixelated;
