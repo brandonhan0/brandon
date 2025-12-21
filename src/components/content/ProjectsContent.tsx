@@ -134,9 +134,7 @@ function ProjectsContent() {
               <h1 className="text-[22px] md:text-[26px] font-extrabold text-black">
                 Projects
               </h1>
-              <p className="text-[13px] text-[#333] mt-1">
-                Click a project on the left. Use thumbnails to browse images.
-              </p>
+
             </div>
             <div className="hidden md:block text-[11px] font-mono text-[#333] text-right">
               <div>DIR: C:\PORTFOLIO\PROJECTS</div>
