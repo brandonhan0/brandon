@@ -68,28 +68,28 @@ function ProjectsContent() {
         description:
           "simple todo list app for ios with add/edit/delete/complete tasks and local storage.",
         tech: ["Swift", "SwiftUI"],
-        images: [todo],
+        images: [todo, natpark],
       },
       {
         title: "fpga memory game",
         description:
           "led memory game on an fpga with fsm, seven seg, leds, controller, and accumulator.",
         tech: ["SystemVerilog", "Vivado", "Basys3"],
-        images: [memory],
+        images: [memory, natpark],
       },
       {
         title: "virtual world",
         description:
           "virtual world game in java with 150+ animations, manual/auto play, a* pathing, inventories, and tasks.",
         tech: ["Java", "Jupiter"],
-        images: [java],
+        images: [java, natpark],
       },
       {
         title: "national park guide app",
         description:
           "swiftui + mapkit gallery for national parks with map annotations and detail view.",
         tech: ["Swift", "MapKit"],
-        images: [natpark],
+        images: [natpark, natpark],
       },
     ],
     []
