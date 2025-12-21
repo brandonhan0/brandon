@@ -265,7 +265,7 @@ function ProjectsContent() {
                   <p className="text-[14px] leading-relaxed">{active.description}</p>
 
                   <div>
-                    <div className="font-bold text-[12px] mb-2">Tech / Tools:</div>
+                    <div className="font-bold text-[12px] mb-2">Tech stack:</div>
                     <div className="flex flex-wrap gap-2">
                       {active.tech.map((t) => (
                         <span
