@@ -152,8 +152,7 @@ function Desktop({ onOpenApp }: DesktopProps) {
     layoutKey,
   ]);
 
-  // Button: reshuffle during this session (optional)
-  const reshuffle = () => setSeed(Math.random());
+
 
   return (
     <div
@@ -176,9 +175,9 @@ function Desktop({ onOpenApp }: DesktopProps) {
               <img
                 src={app.icon}
                 alt={app.title}
-                className="w-20 h-20 rounded-2xl object-cover"
+                className="w-24 h-24 rounded-2xl object-cover"
               />
-              <span className="text-white text-sm font-medium text-center leading-tight drop-shadow-lg w-28">
+              <span className="text-white text-base font-semibold text-center leading-snug drop-shadow-lg w-32">
                 {app.title}
               </span>
             </button>
