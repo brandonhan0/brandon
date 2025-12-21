@@ -1,7 +1,5 @@
 import React, { useEffect } from "react";
 
-import background from "../assets/backgrounds/blue.png"
-import brandon from "../assets/icons/brandon.gif"
 
 type LoginScreenProps = {
   onEnter: () => void;
@@ -17,8 +15,8 @@ const retroBtn =
 
 export default function LoginScreen({
   onEnter,
-  backgroundImage = background,
-  logoImage = brandon,
+  backgroundImage,
+  logoImage,
   showScanlines = false,
 }: LoginScreenProps) {
   // Optional: keyboard Enter works too
