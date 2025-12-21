@@ -5,6 +5,8 @@ import memory from "../../assets/images/image13.png";
 import todo from "../../assets/images/image14.png";
 import natpark from "../../assets/images/image15.png";
 import plant from "../../assets/images/image16.png";
+import layout from "../../assets/images/layout.png";
+import schematic from "../../assets/images/schematic.png";
 import otter from "../../assets/images/image17.jpeg";
 import powder1 from "../../assets/images/image19.png";
 import powder2 from "../../assets/images/image20.png";
@@ -45,7 +47,7 @@ function ProjectsContent() {
         description:
           "automatic irrigation system that uses sensors to sense temperature, humity, and moisture levels of plants. interfaces with a custom ai agent model that gives summaries and analyzes data collected from sensors to give suggestions on how to optimize plant growth. designed PCB layout and soldered custom STM32 PCB for this project. Used KiCAD for circuit design and layout, orderd from JLCPCB.",
         tech: ["STM32", "C", "OpenAI API", "I2C", "USART", "PWM", "SPI"],
-        images: [plant],
+        images: [plant, layout, schematic],
       },
       {
         title: "fullstack Ecommerce platform",
