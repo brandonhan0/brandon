@@ -4,7 +4,7 @@ import java from "../../assets/images/image12.png";
 import memory from "../../assets/images/image13.png";
 import todo from "../../assets/images/image14.png";
 import natpark from "../../assets/images/image15.png";
-//import java from "../../assets/images/image12.png";
+import plant from "../../assets/images/image16.png";
 
 
 
@@ -33,63 +33,63 @@ function ProjectsContent() {
         description:
           "im trying to build a electric gokart from scratch right now, things are still in research and planning phase but gonna be super cool",
         tech: ["KiCAD", "FreeRTOS", "C++", "LTSpice"],
-        images: [skull, kiki, skull, kiki],
+        images: [],
       },
       {
         title: "AI integrated automatic irrigation system",
         description:
           "automatic irrigation system that uses sensors to sense temperature, humity, and moisture levels of plants. interfaces with a custom ai agent model that gives summaries and analyzes data collected from sensors to give suggestions on how to optimize plant growth.",
         tech: ["STM32", "C", "OpenAI API", "I2C", "USART", "PWM", "SPI"],
-        images: [skull, kiki, skull, kiki],
+        images: [plant],
       },
       {
         title: "fullstack Ecommerce platform",
         description:
           "developed scalable full stack ecommerce platform with stripe integrated customer view and supabase auth-secured admin portal.",
         tech: ["React", "Next.js", "Supabase", "Stripe API"],
-        images: [skull, kiki, skull, kiki],
+        images: [],
       },
       {
         title: "16 bit riscv cpu",
         description:
           "custom 16-bit riscv microprocessor for fpga deployment with a 5-stage pipelined architecture + hazard detection + caches.",
         tech: ["Verilog", "Basys3", "Pipeline", "Caches"],
-        images: [skull, kiki, skull, kiki],
+        images: [],
       },
       {
         title: "powershell",
         description:
           "made a simple powershell terminal in c that can execute basic commands, piping, redirection, scripts, and signal handling.",
         tech: ["C"],
-        images: [skull, kiki, skull, kiki],
+        images: [],
       },
       {
         title: "todo list app",
         description:
           "simple todo list app for ios with add/edit/delete/complete tasks and local storage.",
         tech: ["Swift", "SwiftUI"],
-        images: [todo, natpark],
+        images: [todo],
       },
       {
         title: "fpga memory game",
         description:
           "led memory game on an fpga with fsm, seven seg, leds, controller, and accumulator.",
         tech: ["SystemVerilog", "Vivado", "Basys3"],
-        images: [memory, natpark],
+        images: [memory],
       },
       {
         title: "virtual world",
         description:
           "virtual world game in java with 150+ animations, manual/auto play, a* pathing, inventories, and tasks.",
         tech: ["Java", "Jupiter"],
-        images: [java, natpark],
+        images: [java],
       },
       {
         title: "national park guide app",
         description:
           "swiftui + mapkit gallery for national parks with map annotations and detail view.",
         tech: ["Swift", "MapKit"],
-        images: [natpark, natpark],
+        images: [natpark],
       },
     ],
     []
