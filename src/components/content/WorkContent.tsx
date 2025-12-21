@@ -34,13 +34,13 @@ function WorkContent() {
       {
         role: "firmware project lead",
         company: "calpoly racing",
-        period: "2024 - now",
+        period: "2025 - now",
         description:
-          "leading a firmware subteam to design and develop stm32 firmware for custom pcbs. leading can board + drs. integrating sensors for data acquisition, verification, and internal board comms. working with other subsystems for michigan fsae.",
+          "leading subteam of firmware engineers to design and develop firmware for custom stm32 pcbs. leading can board and drs projects. implementing over 16 sensors in the car for data acquisition, test verification, and internal board communication. working along side 15+ other subsystems to design the best car for michigan FSAE compitition. won 6th place last year out of 120 teams, hoping to do better this year we have alot in the works.",
         achievements: [
           "led firmware workstreams + planning",
           "stm32 + can communication",
-          "sensor integration + test verification",
+          "sensor integration + hardware validation",
         ],
         image: racing,
       },
@@ -49,9 +49,9 @@ function WorkContent() {
         company: "calpoly robotics",
         period: "2024 - now",
         description:
-          "computer vision team for urov: mapping/localization, image stitching (photosphere), ui dashboards, and control algorithms for propulsion.",
+          "working on the computer vision team for UROV, implemented software to autonomously map and localize an agent using opencv and slam, that was a pain in the butt and really sucked but was cool. wrote image stitching software that takes over 500 photos in real time and stitches them together to generate a interactable photosphere. built interactive ui dashboard for camera data and driver inputs. wrote vector matrix physics algorithms to control power sent to 6 different propellers on the urov, this was weird but bareable. wrote real time object identification and measurement algortihms using opencv",
         achievements: [
-          "opencv + slam work",
+          "opencv + autonomous tasks",
           "500+ photo stitching pipeline",
           "real-time dashboard for camera + inputs",
         ],
@@ -62,7 +62,7 @@ function WorkContent() {
         company: "thecoderschool",
         period: "2025",
         description:
-          "taught python, minecraft, and game dev camps + 1:1 tutoring for student projects.",
+          "worked here over summer, had a good time teaching kids various applications of coding. taught python camps, minecraft camps, and game development camps. had 1 on 1 tutoring as well for clients who wanted help on personal projects.",
         achievements: ["python camps", "1:1 tutoring", "project-based teaching"],
         image: coderschool,
       },
@@ -71,7 +71,7 @@ function WorkContent() {
         company: "stanford",
         period: "2025",
         description:
-          "led weekly coding sections; taught python + libraries to a global cohort.",
+          "spent a few months leading weekly coding sections for a program at stanford, taught college students how to program in python and its various library applications. was actually super cool i had students from many cxountries across the world and i feel very privallged to be able to work here.",
         achievements: ["teaching + leadership", "python + libraries", "global cohort"],
         image: stanford,
       },
@@ -80,7 +80,7 @@ function WorkContent() {
         company: "tech rocks!",
         period: "2018 - 2023",
         description:
-          "taught coding fundamentals with scratch/code.org + minecraft modding/game design.",
+          "over breaks i taught kids voding fundamentals through scratch and code.org, i actually was a student here as well so it was fun. taught kids through minecraft modding and game design as well.",
         achievements: ["scratch/code.org", "minecraft modding", "game design"],
         image: techrocks,
       },
@@ -96,7 +96,7 @@ function WorkContent() {
         role: "shift lead",
         company: "truedan",
         period: "2021 - 2022",
-        description: "made boba, led shifts, kept ops smooth.",
+        description: "i made boba here and it was fun, made good friends and got free boba and enjoyed serving people",
         achievements: ["shift lead", "service + ops", "team coordination"],
         image: truedan,
       },
@@ -104,7 +104,7 @@ function WorkContent() {
         role: "soccer referee",
         company: "USSF",
         period: "2016 - 2019",
-        description: "refereed youth games (lots of screaming parents yikes).",
+        description: "i was a soccer referee, i mainly refereed for youth soccer games lots of screaming parents yikes",
         achievements: ["decision making", "communication", "conflict management"],
         image: ussf,
       },
@@ -125,9 +125,7 @@ function WorkContent() {
               <h1 className="text-[22px] md:text-[26px] font-extrabold text-black">
                 Work Experience
               </h1>
-              <p className="text-[13px] text-[#333] mt-1">
-                Click a record to view details (like a retro file explorer).
-              </p>
+
             </div>
             <div className="hidden md:block text-[11px] font-mono text-[#333] text-right">
               <div>DIR: C:\PORTFOLIO\WORK</div>
