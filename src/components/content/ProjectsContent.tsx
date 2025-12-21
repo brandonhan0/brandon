@@ -6,6 +6,9 @@ import todo from "../../assets/images/image14.png";
 import natpark from "../../assets/images/image15.png";
 import plant from "../../assets/images/image16.png";
 import otter from "../../assets/images/image17.jpeg";
+import powder1 from "../../assets/images/image19.png";
+import powder2 from "../../assets/images/image20.png";
+import powder3 from "../../assets/images/image20.jpeg";
 
 
 
@@ -49,7 +52,7 @@ function ProjectsContent() {
         description:
           "developed scalable full stack ecommerce platform with stripe integrated customer view and supabase auth-secured admin portal.",
         tech: ["React", "Next.js", "Supabase", "Stripe API"],
-        images: [],
+        images: [powder1, powder2, powder3],
       },
       {
         title: "16 bit riscv cpu",
