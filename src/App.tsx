@@ -12,6 +12,7 @@ import ContactContent from "./components/content/ContactContent";
 
 import loginBg from "./assets/backgrounds/blue.png"
 import logo from "./assets/icons/brandon.gif"
+import skull from "./assets/icons/skull.gif"
 
 export type AppType = "about" | "projects" | "work" | "fun" | "contact";
 
