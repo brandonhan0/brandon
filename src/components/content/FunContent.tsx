@@ -20,20 +20,20 @@ const retroBtn =
   "border-t border-l border-t-white border-l-white border-b border-r border-b-[#404040] border-r-[#404040] " +
   "active:border-t-[#404040] active:border-l-[#404040] active:border-b-white active:border-r-white";
 
-function pickStamp(seed: string) {
-  const stamps = [
-    { text: "VIBES", cls: "bg-[#ffeb3b] text-black" },
-    { text: "COOL", cls: "bg-[#00e5ff] text-black" },
-    { text: "ARCHIVED", cls: "bg-[#ff5252] text-white" },
-    { text: "CERTIFIED", cls: "bg-[#69f0ae] text-black" },
-    { text: "LOL", cls: "bg-[#b388ff] text-black" },
-    { text: "W", cls: "bg-[#ff9800] text-black" },
-  ];
-  // deterministic-ish based on title
-  let h = 0;
-  for (let i = 0; i < seed.length; i++) h = (h * 31 + seed.charCodeAt(i)) >>> 0;
-  return stamps[h % stamps.length];
-}
+// function pickStamp(seed: string) {
+//   const stamps = [
+//     { text: "VIBES", cls: "bg-[#ffeb3b] text-black" },
+//     { text: "COOL", cls: "bg-[#00e5ff] text-black" },
+//     { text: "ARCHIVED", cls: "bg-[#ff5252] text-white" },
+//     { text: "CERTIFIED", cls: "bg-[#69f0ae] text-black" },
+//     { text: "LOL", cls: "bg-[#b388ff] text-black" },
+//     { text: "W", cls: "bg-[#ff9800] text-black" },
+//   ];
+//   // deterministic-ish based on title
+//   let h = 0;
+//   for (let i = 0; i < seed.length; i++) h = (h * 31 + seed.charCodeAt(i)) >>> 0;
+//   return stamps[h % stamps.length];
+// }
 
 export default function FunContent() {
   const interests: FunItem[] = useMemo(
@@ -54,7 +54,7 @@ export default function FunContent() {
 
   const [selected, setSelected] = useState(0);
   const active = interests[selected];
-  const stamp = pickStamp(active.title);
+  // const stamp = pickStamp(active.title);
 
   const next = () => setSelected((s) => (s + 1) % interests.length);
   const prev = () => setSelected((s) => (s - 1 + interests.length) % interests.length);
@@ -103,7 +103,7 @@ export default function FunContent() {
             <div className="divide-y divide-[#e5e5e5]">
               {interests.map((item, i) => {
                 const isActive = i === selected;
-                const itemStamp = pickStamp(item.title);
+                //const itemStamp = pickStamp(item.title);
                 return (
                   <button
                     key={`${item.title}-${i}`}
@@ -118,14 +118,14 @@ export default function FunContent() {
                       <div className="text-[13px] font-bold leading-tight">
                         {item.title}
                       </div>
-                      <span
+                      {/* <span
                         className={[
                           "text-[10px] font-bold px-2 py-0.5 border border-black",
                           isActive ? "bg-white text-black" : itemStamp.cls,
                         ].join(" ")}
                       >
                         {itemStamp.text}
-                      </span>
+                      </span> */}
                     </div>
                     <div
                       className={[
@@ -155,14 +155,6 @@ export default function FunContent() {
                   {selected + 1}/{interests.length} • album: FUN
                 </div>
               </div>
-              <span
-                className={[
-                  "text-[10px] font-bold px-2 py-1 border border-black",
-                  stamp.cls,
-                ].join(" ")}
-              >
-                {stamp.text}
-              </span>
             </div>
 
             {/* Photo viewer area */}
