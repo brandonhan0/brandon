@@ -3,7 +3,7 @@ import { useMemo, useState } from "react";
 import racing from "../../assets/images/racing.png";
 import robotics from "../../assets/images/robotics.jpeg";
 import stanford from "../../assets/images/stanford.png";
-import techrocks from "../../assets/images/image15.png";
+import techrocks from "../../assets/images/techrocks.jpeg";
 import coderschool from "../../assets/images/image16.png";
 import truedan from "../../assets/images/truedan.jpeg";
 import wm from "../../assets/images/wm.jpeg";
