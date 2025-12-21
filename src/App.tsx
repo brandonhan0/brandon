@@ -82,7 +82,7 @@ export default function App() {
       <LoginScreen
         onEnter={() => setEntered(true)}
         backgroundImage={loginBg}
-        logoImage={skull}
+        logoImage={logo}
         showScanlines={false}
       />
     );
