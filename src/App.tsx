@@ -10,8 +10,8 @@ import WorkContent from "./components/content/WorkContent";
 import FunContent from "./components/content/FunContent";
 import ContactContent from "./components/content/ContactContent";
 
-import loginBg from "../assets/backgrounds/blue.png"
-import logo from "../assets/icons/brandon.gif"
+import loginBg from "./assets/backgrounds/blue.png"
+import logo from "./assets/icons/brandon.gif"
 
 export type AppType = "about" | "projects" | "work" | "fun" | "contact";
 
