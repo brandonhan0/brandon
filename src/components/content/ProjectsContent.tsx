@@ -52,7 +52,7 @@ function ProjectsContent() {
         description:
           "developed scalable full stack ecommerce platform with stripe integrated customer view and supabase auth-secured admin portal.",
         tech: ["React", "Next.js", "Supabase", "Stripe API"],
-        images: [powder1, powder2, powder3],
+        images: [powder2, powder1, powder3],
       },
       {
         title: "16 bit riscv cpu",
