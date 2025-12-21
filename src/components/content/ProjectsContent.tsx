@@ -43,7 +43,7 @@ function ProjectsContent() {
       {
         title: "AI integrated automatic irrigation system",
         description:
-          "automatic irrigation system that uses sensors to sense temperature, humity, and moisture levels of plants. interfaces with a custom ai agent model that gives summaries and analyzes data collected from sensors to give suggestions on how to optimize plant growth.",
+          "automatic irrigation system that uses sensors to sense temperature, humity, and moisture levels of plants. interfaces with a custom ai agent model that gives summaries and analyzes data collected from sensors to give suggestions on how to optimize plant growth. designed PCB layout and soldered custom STM32 PCB for this project. Used KiCAD for circuit design and layout, orderd from JLCPCB.",
         tech: ["STM32", "C", "OpenAI API", "I2C", "USART", "PWM", "SPI"],
         images: [plant],
       },
