@@ -1,4 +1,14 @@
 import { useMemo, useState } from "react";
+import pic1 from "../../assets/images/image0.jpeg";
+import pic2 from "../../assets/images/image2.jpeg";
+import pic4 from "../../assets/images/image4.jpeg";
+import pic5 from "../../assets/images/image5.jpeg";
+import pic6 from "../../assets/images/image6.jpeg";
+import pic7 from "../../assets/images/image7.jpeg";
+import pic8 from "../../assets/images/image8.png";
+import pic9 from "../../assets/images/image9.png";
+import pic10 from "../../assets/images/image10.jpeg";
+import pic11 from "../../assets/images/image11.jpeg";
 
 type FunItem = {
   title: string;
