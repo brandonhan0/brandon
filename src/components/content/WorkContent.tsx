@@ -4,10 +4,10 @@ import racing from "../../assets/images/racing.png";
 import robotics from "../../assets/images/robotics.jpeg";
 import stanford from "../../assets/images/stanford.png";
 import techrocks from "../../assets/images/techrocks.png";
-import coderschool from "../../assets/images/image16.png";
+import coderschool from "../../assets/images/coderschool.png";
 import truedan from "../../assets/images/truedan.jpeg";
 import wm from "../../assets/images/wm.jpeg";
-import ussf from "../../assets/images/image20.png";
+import ussf from "../../assets/images/ussf.png";
 
 type WorkItem = {
   role: string;
