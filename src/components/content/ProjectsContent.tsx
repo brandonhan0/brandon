@@ -5,6 +5,8 @@ import memory from "../../assets/images/image13.png";
 import todo from "../../assets/images/image14.png";
 import natpark from "../../assets/images/image15.png";
 import plant from "../../assets/images/image16.png";
+import otter from "../../assets/images/image17.jpeg";
+
 
 
 
@@ -54,9 +56,9 @@ function ProjectsContent() {
         description:
           "custom 16-bit riscv microprocessor for fpga deployment with a 5-stage pipelined architecture + hazard detection + caches.",
         tech: ["Verilog", "Basys3", "Pipeline", "Caches"],
-        images: [],
+        images: [otter],
       },
-      {
+      {  
         title: "powershell",
         description:
           "made a simple powershell terminal in c that can execute basic commands, piping, redirection, scripts, and signal handling.",
