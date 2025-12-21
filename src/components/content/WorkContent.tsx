@@ -36,7 +36,7 @@ function WorkContent() {
         company: "calpoly racing",
         period: "2025 - now",
         description:
-          "leading subteam of firmware engineers to design and develop firmware for custom stm32 pcbs. leading can board and drs projects. implementing over 16 sensors in the car for data acquisition, test verification, and internal board communication. working along side 15+ other subsystems to design the best car for michigan FSAE compitition. won 6th place last year out of 120 teams, hoping to do better this year we have alot in the works.",
+          "leading subteam of firmware engineers to design and develop firmware for custom stm32 pcbs. leading can board and drs projects. implementing over 16 sensors in the car for data acquisition, test verification, and internal board communication. working along side several other subsystems to design the best car for michigan FSAE compitition. won 6th place last year out of 120 teams, hoping to do better this year we have alot in the works.",
         achievements: [
           "led firmware workstreams + planning",
           "stm32 + can communication",
