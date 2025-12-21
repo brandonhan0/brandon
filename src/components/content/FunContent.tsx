@@ -1,5 +1,5 @@
 import { useMemo, useState } from "react";
-import pic1 from "../../assets/images/image0.jpeg";
+import pic1 from "../../assets/images/image1.jpeg";
 import pic2 from "../../assets/images/image2.jpeg";
 import pic4 from "../../assets/images/image4.jpeg";
 import pic5 from "../../assets/images/image5.jpeg";
