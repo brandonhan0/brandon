@@ -276,11 +276,7 @@ function ProjectsContent() {
                     </div>
                   </div>
 
-                  <div className="pt-2 flex flex-wrap gap-2">
-                    <span className={retroBtn}>Save</span>
-                    <span className={retroBtn}>Print</span>
-                    <span className={retroBtn}>Details</span>
-                  </div>
+
                 </div>
               </div>
             </div>
