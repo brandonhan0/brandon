@@ -1,10 +1,13 @@
 import { useMemo, useState } from "react";
 
-import skull from "../../assets/icons/skull.gif";
-import kiki from "../../assets/icons/kiki.gif";
-import car from "../../assets/icons/car.gif";
-import spongebob from "../../assets/icons/spongebob.gif";
-import charliebrown from "../../assets/icons/dancing.gif";
+import racing from "../../assets/images/racing.png";
+import robotics from "../../assets/images/robotics.jpeg";
+import stanford from "../../assets/images/stanford.png";
+import techrocks from "../../assets/images/image15.png";
+import coderschool from "../../assets/images/image16.png";
+import truedan from "../../assets/images/truedan.jpeg";
+import wm from "../../assets/images/wm.jpeg";
+import ussf from "../../assets/images/image20.png";
 
 type WorkItem = {
   role: string;
@@ -39,7 +42,7 @@ function WorkContent() {
           "stm32 + can communication",
           "sensor integration + test verification",
         ],
-        image: skull,
+        image: racing,
       },
       {
         role: "software developer",
@@ -52,7 +55,7 @@ function WorkContent() {
           "500+ photo stitching pipeline",
           "real-time dashboard for camera + inputs",
         ],
-        image: skull,
+        image: robotics,
       },
       {
         role: "coding instructor",
@@ -61,7 +64,7 @@ function WorkContent() {
         description:
           "taught python, minecraft, and game dev camps + 1:1 tutoring for student projects.",
         achievements: ["python camps", "1:1 tutoring", "project-based teaching"],
-        image: "../assets/icons/spongebob.gif",
+        image: coderschool,
       },
       {
         role: "section leader",
@@ -70,7 +73,7 @@ function WorkContent() {
         description:
           "led weekly coding sections; taught python + libraries to a global cohort.",
         achievements: ["teaching + leadership", "python + libraries", "global cohort"],
-        image: "../assets/icons/spongebob.gif",
+        image: stanford,
       },
       {
         role: "coding instructor",
@@ -79,7 +82,7 @@ function WorkContent() {
         description:
           "taught coding fundamentals with scratch/code.org + minecraft modding/game design.",
         achievements: ["scratch/code.org", "minecraft modding", "game design"],
-        image: "../assets/icons/spongebob.gif",
+        image: techrocks,
       },
       {
         role: "sales associate",
@@ -87,7 +90,7 @@ function WorkContent() {
         period: "2022 - 2023",
         description: "cashier, stocking, customer help. coworkers were fun.",
         achievements: ["customer service", "stocking", "cashier"],
-        image: "../assets/icons/spongebob.gif",
+        image: wm ,
       },
       {
         role: "shift lead",
@@ -95,7 +98,7 @@ function WorkContent() {
         period: "2021 - 2022",
         description: "made boba, led shifts, kept ops smooth.",
         achievements: ["shift lead", "service + ops", "team coordination"],
-        image: "../assets/icons/spongebob.gif",
+        image: truedan,
       },
       {
         role: "soccer referee",
@@ -103,7 +106,7 @@ function WorkContent() {
         period: "2016 - 2019",
         description: "refereed youth games (lots of screaming parents yikes).",
         achievements: ["decision making", "communication", "conflict management"],
-        image: "../assets/icons/spongebob.gif",
+        image: ussf,
       },
     ],
     []
