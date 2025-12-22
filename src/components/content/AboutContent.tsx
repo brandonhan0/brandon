@@ -85,15 +85,6 @@ export default function AboutContent() {
 
             </p>
 
-            <div className="mt-4">
-              <div className="font-bold text-[12px] mb-2">quick facts:</div>
-              <ul className="list-disc pl-5 space-y-1 text-[13px]">
-                <li>computer engineering @ cal poly</li>
-                <li>i like firmware + systems + building things</li>
-                <li>i’m big on outdoors, exercise, and music</li>
-                <li>i’m part of a big family (and an even bigger dog)</li>
-              </ul>
-            </div>
           </NoteBlock>
 
 
@@ -115,7 +106,7 @@ export default function AboutContent() {
 
           <PhotoBlock
             src={snake}
-            caption="this snake was actually about to eat me but its ok i am alive."
+            caption="this snake was mad heavy bro"
 
           />
 
