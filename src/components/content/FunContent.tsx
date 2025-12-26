@@ -9,6 +9,10 @@ import pic8 from "../../assets/images/image8.png";
 import pic9 from "../../assets/images/image9.png";
 import pic10 from "../../assets/images/image10.jpeg";
 import pic11 from "../../assets/images/image11.jpeg";
+import pic12 from "../../assets/images/LA.png";
+import pic13 from "../../assets/images/tahoe.JPG";
+
+
 
 type FunItem = {
   title: string;
@@ -31,6 +35,8 @@ const retroBtn =
 export default function FunContent() {
   const interests: FunItem[] = useMemo(
     () => [
+      { title: "tahoe", desc: "tahoe hike in the rainy storm", image: pic13 },
+      { title: "la", desc: "i went to LA and saw some palm trees", image: pic12 },
       { title: "tkd", desc: "heres my family", image: pic11 },
       { title: "tyler", desc: "best concert ive been too", image: pic10 },
       { title: "taiwan", desc: "am i a donut?", image: pic9 },
