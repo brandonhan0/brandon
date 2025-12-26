@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { AppType } from "../App";
-import skull from "../assets/icons/skull.gif";
+import skull from "../assets/icons/toothless.gif";
 import kiki from "../assets/icons/kiki.gif";
 import car from "../assets/icons/car.gif";
 import spongebob from "../assets/icons/spongebob.gif";
