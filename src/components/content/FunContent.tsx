@@ -10,7 +10,7 @@ import pic9 from "../../assets/images/image9.png";
 import pic10 from "../../assets/images/image10.jpeg";
 import pic11 from "../../assets/images/image11.jpeg";
 import pic12 from "../../assets/images/LA.png";
-import pic13 from "../../assets/images/tahoe.JPG";
+import pic13 from "../../assets/images/tahoe.png";
 
 
 
