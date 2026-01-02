@@ -38,7 +38,6 @@ export default function FunContent() {
       { title: "tahoe", desc: "tahoe hike in the rainy storm", image: pic13 },
       { title: "la", desc: "i went to LA and saw some palm trees", image: pic12 },
       { title: "tkd", desc: "heres my family", image: pic11 },
-      { title: "tyler", desc: "best concert ive been too", image: pic10 },
       { title: "taiwan", desc: "am i a donut?", image: pic9 },
       { title: "climbing", desc: "this was a fun v3", image: pic8 },
       { title: "concert", desc: "billie concert was fire", image: pic7 },
