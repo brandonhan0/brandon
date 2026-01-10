@@ -66,11 +66,11 @@ function seededShuffle<T>(arr: T[], seed: number): T[] {
 function Desktop({ onOpenApp }: DesktopProps) {
   const apps: AppIconBase[] = useMemo(
     () => [
-      { type: "about", title: "About Me", icon: spongebob },
-      { type: "projects", title: "Projects", icon: charliebrown },
-      { type: "work", title: "Work Experience", icon: car },
-      { type: "fun", title: "Fun Stuff", icon: kiki },
-      { type: "contact", title: "Contact Me", icon: skull },
+      { type: "about", title: "about me", icon: spongebob },
+      { type: "projects", title: "projects", icon: charliebrown },
+      { type: "work", title: "work experience", icon: car },
+      { type: "fun", title: "fun stuff", icon: kiki },
+      { type: "contact", title: "contact me", icon: skull },
     ],
     []
   );
@@ -100,8 +100,8 @@ function Desktop({ onOpenApp }: DesktopProps) {
 
   // Layout constants (tweak these)
   const cell = isDesktop
-    ? { cellW: 140, cellH: 160, padding: 10 } // desktop spacing
-    : { cellW: 120, cellH: 150, padding: 16 }; // mobile spacing
+    ? { cellW: 140, cellH: 160, padding: 5 } // desktop spacing
+    : { cellW: 120, cellH: 150, padding: 10 }; // mobile spacing
 
   const layoutKey = isDesktop ? "desktop" : "mobile";
 
