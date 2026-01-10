@@ -38,8 +38,8 @@ export default function ContactContent() {
       {
         id: "email",
         label: "Email",
-        value: "brandon8000@icloud.com",
-        href: "mailto:brandon8000@icloud.com",
+        value: "dragontrainer26@gmail.com",
+        href: "mailto:dragontrainer26@gmail.com",
         icon: <Mail className="w-4 h-4" />,
         stamp: "PRIMARY",
       },
