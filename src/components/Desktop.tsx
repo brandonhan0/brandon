@@ -2,7 +2,7 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import { AppType } from "../App";
 import skull from "../assets/icons/toothless.gif";
 import kiki from "../assets/icons/kiki.gif";
-import car from "../assets/icons/porygon.gif";
+import car from "../assets/icons/poygon.gif";
 import spongebob from "../assets/icons/spongebob.gif";
 import charliebrown from "../assets/icons/banana.gif";
 import bgImage from "../assets/backgrounds/background.png";
