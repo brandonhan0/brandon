@@ -196,7 +196,7 @@ function ProjectsContent() {
               <div className="flex items-center gap-2">
                 <button
                   className={retroBtn}
-                  onClick={() => setSelected((s) => (s + 1) % projects.length)}
+                  onClick={() => setSelectedProject((s) => (s + 1) % projects.length)}
                 >
                   Next
                 </button>
