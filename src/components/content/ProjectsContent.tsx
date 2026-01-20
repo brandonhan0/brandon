@@ -194,10 +194,10 @@ function ProjectsContent() {
               </div>
 
               <div className="flex items-center gap-2">
-                <button className={retroBtn} onClick={prevImage} disabled={active.images.length <= 1}>
-                  Prev
-                </button>
-                <button className={retroBtn} onClick={nextImage} disabled={active.images.length <= 1}>
+                <button
+                  className={retroBtn}
+                  onClick={() => setSelected((s) => (s + 1) % projects.length)}
+                >
                   Next
                 </button>
               </div>
