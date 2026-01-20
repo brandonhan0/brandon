@@ -134,9 +134,8 @@ export default function FunContent() {
                 </div>
                 <div className="text-[11px] text-white/80 truncate">
                   {selected + 1}/{interests.length} • album: FUN
-                </div>
-                
-                <div className="mt-3 flex flex-wrap gap-2">
+
+                  <div className="mt-3 flex flex-wrap gap-2">
                   <button className={retroBtn} onClick={prev}>
                     Prev
                   </button>
@@ -144,6 +143,7 @@ export default function FunContent() {
                     Next
                   </button>
       
+                </div>
                 </div>
               </div>
             </div>
