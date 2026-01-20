@@ -36,13 +36,6 @@ function ProjectsContent() {
   const projects: ProjectItem[] = useMemo(
     () => [
       {
-        title: "gokart",
-        description:
-          "im trying to build a electric gokart from scratch right now, things are still in research and planning phase but gonna be super cool",
-        tech: ["KiCAD", "FreeRTOS", "C++", "LTSpice"],
-        images: [],
-      },
-      {
         title: "AI integrated automatic irrigation system",
         description:
           "automatic irrigation system that uses sensors to sense temperature, humity, and moisture levels of plants. interfaces with a custom ai agent model that gives summaries and analyzes data collected from sensors to give suggestions on how to optimize plant growth. designed PCB layout and soldered custom STM32 PCB for this project. Used KiCAD for circuit design and layout, orderd from JLCPCB.",
