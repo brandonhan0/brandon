@@ -138,9 +138,7 @@ export default function FunContent() {
                   {selected + 1}/{interests.length} • album: FUN
 
                   <div className="mt-3 flex flex-wrap gap-2">
-                  <button className={retroBtn} onClick={prev}>
-                    Prev
-                  </button>
+
                   <button className={retroBtn} onClick={next}>
                     Next
                   </button>
