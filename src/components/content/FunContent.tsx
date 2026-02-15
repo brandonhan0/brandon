@@ -11,7 +11,6 @@ import pic10 from "../../assets/images/image10.jpeg";
 import pic11 from "../../assets/images/image11.jpeg";
 import pic12 from "../../assets/images/LA.png";
 import pic13 from "../../assets/images/tahoe.png";
-import pic14 from "../../assets/images/IMG_5078.PNG";
 
 
 
@@ -37,7 +36,6 @@ export default function FunContent() {
   const interests: FunItem[] = useMemo(
     () => [
       { title: "tahoe", desc: "tahoe hike in the rainy storm", image: pic13 },
-      { title: "base", desc: "just upgraded to TH13", image: pic14 },
       { title: "la", desc: "i went to LA and saw some palm trees", image: pic12 },
       { title: "tkd", desc: "heres my family", image: pic11 },
       { title: "taiwan", desc: "am i a donut?", image: pic9 },
