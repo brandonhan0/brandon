@@ -179,7 +179,7 @@ function Desktop({ onOpenApp }: DesktopProps) {
                 alt={app.title}
                 className="w-24 h-24 rounded-2xl object-cover"
               />
-              <span className="font-retro text-green-400 text-xl tracking-widest text-center drop-shadow-md w-32">
+              <span className="font-retro text-white text-xl tracking-widest text-center drop-shadow-md w-32">
                 {app.title}
               </span>
             </button>
