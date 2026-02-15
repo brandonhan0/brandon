@@ -36,10 +36,10 @@ function WorkContent() {
         company: "calpoly racing",
         period: "2025 - now",
         description:
-          "leading subteam of firmware engineers to design and develop firmware for custom stm32 pcbs. leading various firmware projects. working along side several other subsystems to design the best car for michigan FSAE compitition.",
+          "leading subteam of firmware engineers to design and develop firmware for custom stm32 boards. leading various firmware projects. working along side several other subsystems to design the best car for michigan FSAE compitition.",
         achievements: [
-          "led firmware workstreams + planning",
-          "stm32 + can communication",
+          "steering wheel + teaching",
+          "stm32 + can",
           "sensors + drs",
         ],
         image: racing,
@@ -71,7 +71,7 @@ function WorkContent() {
         company: "stanford",
         period: "2025",
         description:
-          "spent a few months leading weekly coding sections for a program at stanford, taught college students how to program in python and its various library applications. was actually super cool i had students from many cxountries across the world and i feel very privallged to be able to work here.",
+          "spent a few months leading weekly coding sections for a program at stanford, taught college students how to program in python and its various library applications. was actually super cool i had students from many countries across the world and i feel very privallged to be able to work here.",
         achievements: ["teaching + leadership", "python + libraries", "global cohort"],
         image: stanford,
       },
