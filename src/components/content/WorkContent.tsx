@@ -32,7 +32,7 @@ function WorkContent() {
   const experiences: WorkItem[] = useMemo(
     () => [
       {
-        role: "firmware project lead",
+        role: "firmware member",
         company: "calpoly racing",
         period: "2025 - now",
         description:
@@ -45,7 +45,7 @@ function WorkContent() {
         image: racing,
       },
       {
-        role: "software developer",
+        role: "software team member",
         company: "calpoly robotics",
         period: "2024 - now",
         description:
