@@ -207,83 +207,88 @@ function ProjectsContent() {
               </div>
             </div>
 
-            <div className="bg-white p-4 text-black">
-              <div className="grid grid-cols-1 lg:grid-cols-[260px_1fr] gap-4">
-                {/* Image viewer */}
-                <div className="space-y-2">
-                  <div className={["bg-[#c0c0c0] p-2", bevelOuter].join(" ")}>
+<div className="bg-white p-4 text-black">
+  <div className="flex flex-col xl:flex-row gap-4 items-start">
+    {/* Image viewer */}
+    <div className="w-full xl:w-[320px] xl:flex-shrink-0 space-y-2">
+      <div className={["bg-[#c0c0c0] p-2", bevelOuter].join(" ")}>
+        <div className={["bg-white", bevelInner].join(" ")}>
+          {activeImage ? (
+            <img
+              src={activeImage}
+              alt={active.title}
+              className="w-full h-[180px] md:h-[220px] object-cover"
+            />
+          ) : (
+            <div className="w-full h-[180px] md:h-[220px] flex items-center justify-center text-[12px] text-[#444]">
+              image goes here
+            </div>
+          )}
+        </div>
+      </div>
+
+      {/* Thumbnails */}
+      {active.images.length > 1 && (
+        <div className={["bg-[#c0c0c0] p-2", bevelOuter].join(" ")}>
+          <div className={["bg-white p-2", bevelInner].join(" ")}>
+            <div className="grid grid-cols-5 gap-2">
+              {active.images.map((img, idx) => {
+                const selected = idx === activeImageIndex;
+                return (
+                  <button
+                    key={`${img}-${idx}`}
+                    onClick={() => setImageIndex(active.title, idx)}
+                    className={[
+                      "p-1",
+                      selected ? "bg-[#000080]" : "bg-[#c0c0c0]",
+                      bevelOuter,
+                    ].join(" ")}
+                    title={`Image ${idx + 1}`}
+                  >
                     <div className={["bg-white", bevelInner].join(" ")}>
-                      {activeImage ? (
-                        <img
-                          src={activeImage}
-                          alt={active.title}
-                          className="w-full h-[180px] object-cover"
-                        />
-                      ) : (
-                        <div className="w-full h-[180px] flex items-center justify-center text-[12px] text-[#444]">
-                          image goes here
-                        </div>
-                      )}
+                      <img
+                        src={img}
+                        alt={`${active.title} ${idx + 1}`}
+                        className="w-full h-[42px] object-cover"
+                      />
                     </div>
-                  </div>
+                  </button>
+                );
+              })}
+            </div>
+            <div className="mt-2 text-[11px] font-mono text-[#333]">
+              Preview: {activeImageIndex + 1}/{active.images.length}
+            </div>
+          </div>
+        </div>
+      )}
+    </div>
 
-                  {/* Thumbnails */}
-                  {active.images.length > 1 && (
-                    <div className={["bg-[#c0c0c0] p-2", bevelOuter].join(" ")}>
-                      <div className={["bg-white p-2", bevelInner].join(" ")}>
-                        <div className="grid grid-cols-5 gap-2">
-                          {active.images.map((img, idx) => {
-                            const selected = idx === activeImageIndex;
-                            return (
-                              <button
-                                key={`${img}-${idx}`}
-                                onClick={() => setImageIndex(active.title, idx)}
-                                className={[
-                                  "p-1",
-                                  selected ? "bg-[#000080]" : "bg-[#c0c0c0]",
-                                  bevelOuter,
-                                ].join(" ")}
-                                title={`Image ${idx + 1}`}
-                              >
-                                <div className={["bg-white", bevelInner].join(" ")}>
-                                  <img
-                                    src={img}
-                                    alt={`${active.title} ${idx + 1}`}
-                                    className="w-full h-[42px] object-cover"
-                                  />
-                                </div>
-                              </button>
-                            );
-                          })}
-                        </div>
-                        <div className="mt-2 text-[11px] font-mono text-[#333]">
-                          Preview: {activeImageIndex + 1}/{active.images.length}
-                        </div>
-                      </div>
-                    </div>
-                  )}
-                </div>
+    {/* Text */}
+    <div className="w-full min-w-0 space-y-3 xl:flex-1">
+      <p className="text-[14px] leading-relaxed max-w-[75ch]">
+        {active.description}
+      </p>
 
-                {/* Text */}
-                <div className="space-y-3">
-                  <p className="text-[14px] leading-relaxed">{active.description}</p>
-
-                  <div>
-                    <div className="font-bold text-[12px] mb-2">Tech stack:</div>
-                    <div className="flex flex-wrap gap-2">
-                      {active.tech.map((t) => (
-                        <span
-                          key={t}
-                          className={[
-                            "text-[11px] px-2 py-1 bg-[#c0c0c0] text-black",
-                            bevelOuter,
-                          ].join(" ")}
-                        >
-                          {t}
-                        </span>
-                      ))}
-                    </div>
-                  </div>
+      <div>
+        <div className="font-bold text-[12px] mb-2">Tech stack:</div>
+        <div className="flex flex-wrap gap-2">
+          {active.tech.map((t) => (
+            <span
+              key={t}
+              className={[
+                "text-[11px] px-2 py-1 bg-[#c0c0c0] text-black",
+                bevelOuter,
+              ].join(" ")}
+            >
+              {t}
+            </span>
+          ))}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 
                 </div>
