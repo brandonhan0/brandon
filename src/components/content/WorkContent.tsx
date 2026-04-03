@@ -36,7 +36,7 @@ function WorkContent() {
         company: "calpoly racing",
         period: "2025 - now",
         description:
-          "leading subteam of firmware engineers to design and develop firmware for custom stm32 boards. leading various firmware projects. working along side several other subsystems to design the best car for michigan FSAE compitition.",
+          "leading subteam of firmware engineers to design and develop firmware for custom stm32 boards. working along side several other subsystems to design the best car for michigan FSAE compitition.",
         achievements: [
           "steering wheel + teaching",
           "stm32 + can",
@@ -211,14 +211,7 @@ function WorkContent() {
                 <div className="space-y-3">
                   <p className="text-[14px] leading-relaxed">{active.description}</p>
 
-                  <div>
-                    <div className="font-bold text-[12px] mb-2">Highlights:</div>
-                    <ul className="list-disc pl-5 space-y-1 text-[13px]">
-                      {active.achievements.map((a, idx) => (
-                        <li key={idx}>{a}</li>
-                      ))}
-                    </ul>
-                  </div>
+
                 </div>
               </div>
             </div>
