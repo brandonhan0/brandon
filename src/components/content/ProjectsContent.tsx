@@ -289,12 +289,6 @@ function ProjectsContent() {
     </div>
   </div>
 </div>
-
-
-                </div>
-              </div>
-            </div>
-
             <div className="bg-[#c0c0c0] px-3 py-2 text-[11px] font-mono text-black flex justify-between">
               <span>
                 Selection: {selectedProject + 1}/{projects.length}
