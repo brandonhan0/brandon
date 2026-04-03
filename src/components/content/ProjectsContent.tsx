@@ -36,7 +36,7 @@ function ProjectsContent() {
   const projects: ProjectItem[] = useMemo(
     () => [
       {
-        title: "autonomous object finder",
+        title: "autonomous lost object finder",
         description:
           "made a robot that helps patients with dementia(or college students) find objects they lose around the house. did a study interviewing students and found that a common nuisance among them was they were always losing belongings. the solution i came up with was make an fully autonomous robot that can look for any item you have lost. uses ultrlytic object detection to identify objects, and will ping the user if the object is found. uses lidar for localization and mapping to autonomously navigate throughout a building or home. used ros2 to organize and execute code, this was very fun shoutout to ros2.",
         tech: ["NVIDIA jetson orin nano", "C", "ROS2", "lidar", "RGBD", "Ultrlytics", "YOLO"],
@@ -45,8 +45,8 @@ function ProjectsContent() {
       {
         title: "solar powered disc light",
         description:
-          "loading...",
-        tech: ["STM32", "C", "OpenAI API", "DMA", "I2C", "USART", "PWM", "SPI"],
+          "making a solar powered disc golf light to go ontop of metal baskets. this involves designing a circuit and making layout and writing firmware for it.",
+        tech: ["STM32", "C", "KiCAD"]
         images: [],
       },
       {
