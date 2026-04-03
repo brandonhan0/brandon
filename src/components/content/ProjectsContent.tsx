@@ -185,6 +185,7 @@ function ProjectsContent() {
             </div>
           </div>
         </div>
+
         {/* Right details */}
         <div className={["bg-[#c0c0c0] p-2", bevelOuter].join(" ")}>
           <div className={["bg-[#c0c0c0] p-2", bevelInner].join(" ")}>
@@ -207,19 +208,19 @@ function ProjectsContent() {
             </div>
 
             <div className="bg-white p-4 text-black">
-              <div className="flex flex-col xl:flex-row gap-4 items-start">
+              <div className="grid grid-cols-1 lg:grid-cols-[260px_1fr] gap-4">
                 {/* Image viewer */}
-                <div className="w-full xl:w-[320px] xl:flex-shrink-0 space-y-2">
+                <div className="space-y-2">
                   <div className={["bg-[#c0c0c0] p-2", bevelOuter].join(" ")}>
                     <div className={["bg-white", bevelInner].join(" ")}>
                       {activeImage ? (
                         <img
                           src={activeImage}
                           alt={active.title}
-                          className="w-full h-[180px] md:h-[220px] object-cover"
+                          className="w-full h-[180px] object-cover"
                         />
                       ) : (
-                        <div className="w-full h-[180px] md:h-[220px] flex items-center justify-center text-[12px] text-[#444]">
+                        <div className="w-full h-[180px] flex items-center justify-center text-[12px] text-[#444]">
                           image goes here
                         </div>
                       )}
@@ -264,10 +265,8 @@ function ProjectsContent() {
                 </div>
 
                 {/* Text */}
-                <div className="w-full min-w-0 space-y-3 xl:flex-1">
-                  <p className="text-[14px] leading-relaxed max-w-[75ch]">
-                    {active.description}
-                  </p>
+                <div className="space-y-3">
+                  <p className="text-[14px] leading-relaxed">{active.description}</p>
 
                   <div>
                     <div className="font-bold text-[12px] mb-2">Tech stack:</div>
@@ -285,18 +284,12 @@ function ProjectsContent() {
                       ))}
                     </div>
                   </div>
+
+
                 </div>
               </div>
             </div>
 
-            <div className="bg-[#c0c0c0] px-3 py-2 text-[11px] font-mono text-black flex justify-between">
-              <span>
-                Selection: {selectedProject + 1}/{projects.length}
-              </span>
-              <span>Status: OK</span>
-            </div>
-          </div>
-        </div>
             <div className="bg-[#c0c0c0] px-3 py-2 text-[11px] font-mono text-black flex justify-between">
               <span>
                 Selection: {selectedProject + 1}/{projects.length}
