@@ -37,22 +37,19 @@ function ProjectsContent() {
     () => [
       {
         title: "autonomous lost object finder",
-        description:
-          "made a robot that helps patients with dementia(or college students) find objects they lose around the house. did a study interviewing students and found that a common nuisance among them was they were always losing belongings. the solution i came up with was make an fully autonomous robot that can look for any item you have lost. uses ultrlytic object detection to identify objects, and will ping the user if the object is found. uses lidar for localization and mapping to autonomously navigate throughout a building or home. used ros2 to organize and execute code, this was very fun shoutout to ros2.",
+        description: "made a robot that helps patients with dementia(or college students) find objects they lose around the house. did a study interviewing students and found that a common nuisance among them was they were always losing belongings. the solution i came up with was make an fully autonomous robot that can look for any item you have lost. uses ultrlytic object detection to identify objects, and will ping the user if the object is found. uses lidar for localization and mapping to autonomously navigate throughout a building or home. used ros2 to organize and execute code, this was very fun shoutout to ros2.",
         tech: ["NVIDIA jetson orin nano", "C", "ROS2", "lidar", "RGBD", "Ultrlytics", "YOLO"],
         images: [],
       },
       {
         title: "solar powered disc light",
-        description:
-          "making a solar powered disc golf light to go ontop of metal baskets. this involves designing a circuit and making layout and writing firmware for it.",
-        tech: ["STM32", "C", "KiCAD"]
+        description: "making a solar powered disc golf light to go ontop of metal baskets. this involves designing a circuit and making layout and writing firmware for it.",
+        tech: ["STM32", "C", "KiCAD"],
         images: [],
       },
       {
         title: "AI integrated automatic irrigation system",
-        description:
-          "automatic irrigation system that uses sensors to sense temperature, humity, and moisture levels of plants. interfaces with a custom ai agent model that gives summaries and analyzes data collected from sensors to give suggestions on how to optimize plant growth. designed and assembled custom STM32 PCB for this project. Used KiCAD for circuit design and layout.",
+        description: "automatic irrigation system that uses sensors to sense temperature, humity, and moisture levels of plants. interfaces with a custom ai agent model that gives summaries and analyzes data collected from sensors to give suggestions on how to optimize plant growth. designed and assembled custom STM32 PCB for this project. Used KiCAD for circuit design and layout.",
         tech: ["STM32", "C", "OpenAI API", "DMA", "I2C", "USART", "PWM", "SPI"],
         images: [plant, layout, schematic],
       },
