@@ -221,7 +221,7 @@ function ProjectsContent() {
                         />
                       ) : (
                         <div className="w-full h-[180px] flex items-center justify-center text-[12px] text-[#444]">
-                          image goes here
+                          its loading wait a bit
                         </div>
                       )}
                     </div>
