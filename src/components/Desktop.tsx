@@ -4,7 +4,7 @@ import skull from "../assets/icons/toothless.gif";
 import kiki from "../assets/icons/kiki.gif";
 import car from "../assets/icons/poygon.gif";
 import spongebob from "../assets/icons/spongebob.gif";
-import charliebrown from "../assets/icons/duck.gif";
+import charliebrown from "../assets/icons/shulker.gif";
 import bgImage from "../assets/backgrounds/background.png";
 //import bgImage from "../assets/backgrounds/space_background.gif";
 
