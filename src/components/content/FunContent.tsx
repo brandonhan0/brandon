@@ -12,6 +12,10 @@ import pic11 from "../../assets/images/image11.jpeg";
 import pic12 from "../../assets/images/LA.png";
 import pic13 from "../../assets/images/tahoe.png";
 import pic14 from "../../assets/images/hellp.jpeg";
+import pic15 from "../../assets/images/frens.jpg";
+import pic16 from "../../assets/images/marty.jpg";
+import pic17 from "../../assets/images/um.jpg";
+import pic18 from "../../assets/images/amstradam.jpg";
 
 
 
@@ -48,6 +52,10 @@ export default function FunContent() {
       { title: "ebike", desc: "probably the best thing ive ever spent my money on", image: pic2 },
       { title: "bali", desc: "rice patties in bali", image: pic4 },
       { title: "atv", desc: "going through waterfalls and rivers and things", image: pic5 },
+      { title: "frens", desc: "nick and desmond", image: pic15 },
+      { title: "marty supreme", desc: "one of the greats", image: pic16 },
+      { title: "tunnel", desc: "", image: pic17 },
+      { title: "amstradam", desc: "did i spell that right", image: pic18 },
     ],
     []
   );
