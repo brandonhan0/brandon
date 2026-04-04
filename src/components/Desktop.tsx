@@ -5,8 +5,8 @@ import kiki from "../assets/icons/kiki.gif";
 import car from "../assets/icons/poygon.gif";
 import spongebob from "../assets/icons/spongebob.gif";
 import charliebrown from "../assets/icons/car2.gif";
-import bgImage from "../assets/backgrounds/background.png";
-//import bgImage from "../assets/backgrounds/space_background.gif";
+//import bgImage from "../assets/backgrounds/background.png";
+import bgImage from "../assets/backgrounds/background.gof.gif";
 
 
 interface DesktopProps {
