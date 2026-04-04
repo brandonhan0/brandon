@@ -45,7 +45,7 @@ export default function FunContent() {
       { title: "the hellp", desc: "these ppl didnt know how to mosh", image: pic14 },
       { title: "la", desc: "i went to LA and saw some palm trees", image: pic12 },
       { title: "tkd", desc: "heres my family", image: pic11 },
-      { title: "climbing", desc: "this was a fun v3", image: pic8 },
+      { title: "climbing", desc: "theyre saying v5 climber in the chat somewhere", image: pic8 },
       { title: "concert", desc: "billie concert was fire", image: pic7 },
       { title: "golf", desc: "i suck at golf but its for thanksgivng", image: pic6 },
       { title: "death valley", desc: "me and my brother in the dunes", image: pic1 },
