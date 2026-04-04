@@ -6,7 +6,7 @@ import car from "../assets/icons/poygon.gif";
 import spongebob from "../assets/icons/spongebob.gif";
 import charliebrown from "../assets/icons/car2.gif";
 //import bgImage from "../assets/backgrounds/background.png";
-import bgImage from "../assets/backgrounds/lighthouse.gif";
+import bgImage from "../assets/backgrounds/art_background.webp";
 
 
 interface DesktopProps {
