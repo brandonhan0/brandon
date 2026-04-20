@@ -1,6 +1,6 @@
 import { useMemo, useState } from "react";
 
-import racing from "../../assets/images/racing.png";
+import racing from "../../assets/images/DSC_0240.jpg";
 import robotics from "../../assets/images/urov.png";
 import stanford from "../../assets/images/stanford.png";
 import techrocks from "../../assets/images/techrocks.png";
