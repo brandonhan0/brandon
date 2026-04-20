@@ -80,8 +80,8 @@ export default function AboutContent() {
         <div className="space-y-4">
           <NoteBlock title="about_me.txt">
             <p>
-            hello! my name is brandon and i am a 3rd year computer engineering student attending calpoly. i like to make things, i like being outside, i like exercising, and i like to play music. i am part of a big family and i have an even bigger dog.
-            i like trying new things and i frequently push myself into situations that i am unfamiliar with. this has led me to fall in love with many things, i like climbing, i like photography, i like playing music, i like hiking biking, i like basketball, i like to go to the gym, and i like meeting new people. i also love eating food.
+            hello! my name is brandon and i am a 3rd year computer engineering student attending calpoly. i am part of a big family and i have an even bigger dog.
+            i like trying new things and i frequently push myself into situations that i am unfamiliar with. this has led me to fall in love with many things. for example, i like electronics, i like climbing, i like photography, i like playing music, i like hiking biking, i like basketball, i like to go to the gym, and i like meeting new people. i also love eating food.
 
             </p>
 
