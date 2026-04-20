@@ -54,7 +54,6 @@ export default function FunContent() {
       { title: "atv", desc: "going through waterfalls and rivers and things", image: pic5 },
       { title: "frens", desc: "nick and desmond", image: pic15 },
       { title: "marty supreme", desc: "one of the greats", image: pic16 },
-      { title: "amstradam", desc: "did i spell that right", image: pic18 },
     ],
     []
   );
