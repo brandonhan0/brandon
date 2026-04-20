@@ -101,7 +101,7 @@ export default function AboutContent() {
         <div className="space-y-4">
           <PhotoBlock
             src={me}
-            caption="hi"
+            caption="this is me"
           />
 
 
