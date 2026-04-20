@@ -1,5 +1,5 @@
 import React from "react";
-import me from "../../assets/images/me.jpeg";
+import me from "../../assets/images/IMG_3672.jpg";
 import snake from "../../assets/images/image3.jpeg";
 
 
