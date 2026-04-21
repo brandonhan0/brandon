@@ -67,34 +67,6 @@ function ProjectsContent() {
         tech: ["Verilog", "Basys3", "Pipeline", "Caches"],
         images: [otter],
       },
-      {  
-        title: "powershell",
-        description:
-          "made a simple powershell terminal in c that can execute basic commands, piping, redirection, scripts, and signal handling.",
-        tech: ["C"],
-        images: [],
-      },
-      {
-        title: "todo list app",
-        description:
-          "simple todo list app for ios with add/edit/delete/complete tasks and local storage.",
-        tech: ["Swift", "SwiftUI"],
-        images: [todo],
-      },
-      {
-        title: "fpga memory game",
-        description:
-          "led memory game on an fpga with fsm, seven seg, leds, controller, and accumulator.",
-        tech: ["SystemVerilog", "Vivado", "Basys3"],
-        images: [memory],
-      },
-      {
-        title: "virtual world",
-        description:
-          "virtual world game in java with 150+ animations, manual/auto play, a* pathing, inventories, and tasks.",
-        tech: ["Java", "Jupiter"],
-        images: [java],
-      },
       {
         title: "national park guide app",
         description:
