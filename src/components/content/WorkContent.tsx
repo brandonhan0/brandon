@@ -36,11 +36,11 @@ function WorkContent() {
         company: "calpoly racing",
         period: "2026 - now",
         description:
-          "design all firmware functions and interactions on vehicle, including vehicle control, vehicle saftey, and data accqusition.(I spend too much time here someone pls send help)",
+          "design and oversee all firmware functions and interactions on vehicle, including vehicle control, vehicle saftey, and data accqusition.(I spend too much time here someone pls send help)",
         achievements: [
-          "steering wheel + teaching",
-          "stm32 + can",
-          "sensors + drs",
+          "headaches",
+          "the hanger",
+          "guh",
         ],
         image: racing,
       },

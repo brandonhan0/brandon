@@ -37,7 +37,7 @@ function ProjectsContent() {
     () => [
       {
         title: "steering wheel",
-        description: "Programmed this lil guy",      
+        description: "programmed this lil guy, acts as primary driver control system and dash. controls drive state and acts as gateway for all vehicle data to be displayed.",      
         tech: ["STM32", "FreeRTOS", "Goofy chinese screen"],
         images: [],
       },
