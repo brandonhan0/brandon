@@ -9,6 +9,8 @@ import ProjectsContent from "./components/content/ProjectsContent";
 import WorkContent from "./components/content/WorkContent";
 import FunContent from "./components/content/FunContent";
 import ContactContent from "./components/content/ContactContent";
+import CameraContent from "./components/content/CameraContent";
+
 
 import loginBg from "./assets/backgrounds/blue.png"
 import logo from "./assets/icons/brandon_2.gif"
