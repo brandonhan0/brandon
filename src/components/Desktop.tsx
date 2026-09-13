@@ -6,7 +6,7 @@ import car from "../assets/icons/poygon.gif";
 import spongebob from "../assets/icons/spongebob.gif";
 import charliebrown from "../assets/icons/car2.gif";
 import bgImage from "../assets/backgrounds/background.png";
-import cameras from "../assets/icons/camera.gif";
+import cameras from "../assets/icons/camera-shutter-flash.gif";
 
 //import bgImage from "../assets/backgrounds/art_background.webp";
 
