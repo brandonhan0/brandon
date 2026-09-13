@@ -43,7 +43,7 @@ function ProjectsContent() {
       },
       {
         title: "solar powered disc light",
-        description: "making a solar powered disc golf light to go ontop of metal baskets. this involves designing a circuit and making layout and writing firmware for it.",
+        description: "making a solar powered disc golf light to go ontop of metal baskets. this involves designing and validating a circuit and making a pcb and writing firmware for it. im on a informal NDA for this idk",
         tech: ["STM32", "C", "KiCAD"],
         images: [],
       },
@@ -66,13 +66,6 @@ function ProjectsContent() {
           "custom 16-bit riscv microprocessor for fpga deployment with a 5-stage pipelined architecture + hazard detection + caches.",
         tech: ["Verilog", "Basys3", "Pipeline", "Caches"],
         images: [otter],
-      },
-      {
-        title: "national park guide app",
-        description:
-          "swiftui + mapkit gallery for national parks with map annotations and detail view.",
-        tech: ["Swift", "MapKit"],
-        images: [natpark],
       },
     ],
     []
