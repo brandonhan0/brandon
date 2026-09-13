@@ -185,4 +185,12 @@ function Desktop({ onOpenApp }: DesktopProps) {
               />
               <span className="text-white text-base font-semibold text-center leading-snug drop-shadow-lg w-32">
                 {app.title}
-    
+              </span>
+            </button>
+          );
+        })}
+    </div>
+  );
+}
+
+export default Desktop;
