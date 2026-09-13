@@ -32,6 +32,19 @@ function WorkContent() {
   const experiences: WorkItem[] = useMemo(
     () => [
       {
+        role: "firmware lead",
+        company: "calpoly racing",
+        period: "2026 - now",
+        description:
+          "design all firmware functions and interactions on vehicle, including vehicle control, vehicle saftey, and data accqusition.(I spend too much time here someone pls send help)",
+        achievements: [
+          "steering wheel + teaching",
+          "stm32 + can",
+          "sensors + drs",
+        ],
+        image: racing,
+      },
+      {
         role: "firmware project lead",
         company: "calpoly racing",
         period: "2025 - now",
