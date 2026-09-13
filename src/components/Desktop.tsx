@@ -75,7 +75,7 @@ function Desktop({ onOpenApp }: DesktopProps) {
       { type: "work", title: "work experience", icon: car },
       { type: "fun", title: "fun stuff", icon: kiki },
       { type: "contact", title: "contact me", icon: skull },
-      { type: "camera", title: "camera", icon: cameras },
+      { type: "camera", title: "camera", icon: skull },
 
     ],
     []
@@ -185,12 +185,4 @@ function Desktop({ onOpenApp }: DesktopProps) {
               />
               <span className="text-white text-base font-semibold text-center leading-snug drop-shadow-lg w-32">
                 {app.title}
-              </span>
-            </button>
-          );
-        })}
-    </div>
-  );
-}
-
-export default Desktop;
+    

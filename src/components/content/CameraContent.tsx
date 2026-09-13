@@ -1,5 +1,21 @@
 import { useMemo, useState } from "react";
-import pic1 from "../../assets/images/image1.jpeg";
+import port0 from "../../assets/portfolio/port0.jpeg";
+import port1 from "../../assets/portfolio/port1.jpeg";
+import port2 from "../../assets/portfolio/port2.jpeg";
+import port3 from "../../assets/portfolio/port3.jpeg";
+import port4 from "../../assets/portfolio/port4.jpeg";
+import port5 from "../../assets/portfolio/port5.jpeg";
+import port6 from "../../assets/portfolio/port6.jpeg";
+import port7 from "../../assets/portfolio/port7.jpeg";
+import port8 from "../../assets/portfolio/port8.jpeg";
+import port9 from "../../assets/portfolio/port9.jpeg";
+import port10 from "../../assets/portfolio/port10.jpeg";
+import port11 from "../../assets/portfolio/port11.jpeg";
+import port12 from "../../assets/portfolio/port12.jpeg";
+import port13 from "../../assets/portfolio/port13.jpeg";
+import port14 from "../../assets/portfolio/port14.jpeg";
+import port15 from "../../assets/portfolio/port15.jpeg";
+
 
 type FunItem = {
   title: string;
@@ -22,7 +38,21 @@ const retroBtn =
 export default function ContactContent() {
   const interests: FunItem[] = useMemo(
     () => [
-      { title: "tkd", desc: "heres my family", image: pic1 },
+      { title: "tkd", desc: "heres my family", image: port0 },
+      { title: "tkd", desc: "heres my family", image: port1 },
+      { title: "tkd", desc: "heres my family", image: port2 },
+      { title: "tkd", desc: "heres my family", image: port3 },
+      { title: "tkd", desc: "heres my family", image: port4 },
+      { title: "tkd", desc: "heres my family", image: port5 },
+      { title: "tkd", desc: "heres my family", image: port6 },
+      { title: "tkd", desc: "heres my family", image: port7 },
+      { title: "tkd", desc: "heres my family", image: port8 },
+      { title: "tkd", desc: "heres my family", image: port9 },
+      { title: "tkd", desc: "heres my family", image: port10 },
+      { title: "tkd", desc: "heres my family", image: port11 },
+      { title: "tkd", desc: "heres my family", image: port12 },
+      { title: "tkd", desc: "heres my family", image: port13 },
+
     ],
     []
   );
