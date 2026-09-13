@@ -41,19 +41,9 @@ const retroBtn =
 export default function FunContent() {
   const interests: FunItem[] = useMemo(
     () => [
-      { title: "tahoe", desc: "tahoe hike in the rainy storm", image: pic13 },
-      { title: "the hellp", desc: "these ppl didnt know how to mosh", image: pic14 },
-      { title: "la", desc: "i went to LA and saw some palm trees", image: pic12 },
       { title: "tkd", desc: "heres my family", image: pic11 },
-      { title: "climbing", desc: "theyre saying v5 climber in the chat somewhere", image: pic8 },
-      { title: "concert", desc: "billie concert was fire", image: pic7 },
-      { title: "golf", desc: "i suck at golf but its for thanksgivng", image: pic6 },
-      { title: "death valley", desc: "me and my brother in the dunes", image: pic1 },
       { title: "ebike", desc: "probably the best thing ive ever spent my money on", image: pic2 },
-      { title: "bali", desc: "rice patties in bali", image: pic4 },
-      { title: "atv", desc: "going through waterfalls and rivers and things", image: pic5 },
       { title: "frens", desc: "nick and desmond", image: pic15 },
-      { title: "marty supreme", desc: "one of the greats", image: pic16 },
     ],
     []
   );
