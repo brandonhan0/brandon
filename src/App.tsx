@@ -12,9 +12,8 @@ import ContactContent from "./components/content/ContactContent";
 
 import loginBg from "./assets/backgrounds/blue.png"
 import logo from "./assets/icons/brandon_2.gif"
-import skull from "./assets/icons/skull.gif"
 
-export type AppType = "about" | "projects" | "work" | "fun" | "contact";
+export type AppType = "about" | "projects" | "work" | "fun" | "contact" | "camera";
 
 interface OpenWindow {
   id: string;
@@ -73,6 +72,8 @@ export default function App() {
         return <FunContent />;
       case "contact":
         return <ContactContent />;
+      case "camera":
+        return <CameraContent />;
     }
   };
 
