@@ -75,7 +75,7 @@ function Desktop({ onOpenApp }: DesktopProps) {
       { type: "work", title: "work experience", icon: car },
       { type: "fun", title: "fun stuff", icon: kiki },
       { type: "contact", title: "contact me", icon: skull },
-      { type: "camera", title: "photography", icon: cameras },
+      { type: "camera", title: "camera", icon: cameras },
 
     ],
     []
