@@ -198,7 +198,7 @@ function BrowserWindow({
   onDoubleClick={toggleMaximize}
 >
   {/* Desktop window controls */}
-  {!isMobile && (
+
     <div className="flex shrink-0 items-center gap-1">
       <button
         type="button"
@@ -213,7 +213,7 @@ function BrowserWindow({
       >
         <X className="w-3.5 h-3.5 text-black" />
       </button>
-
+  {!isMobile && (
       <button
         type="button"
         onClick={(e) => {
