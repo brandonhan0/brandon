@@ -227,8 +227,9 @@ function BrowserWindow({
       >
         <Maximize2 className="w-3.5 h-3.5 text-black" />
       </button>
+      )}
     </div>
-  )}
+
 
   {/* Window title */}
   <div className="flex min-w-0 flex-1 items-center gap-2">
