@@ -36,9 +36,9 @@ function ProjectsContent() {
   const projects: ProjectItem[] = useMemo(
     () => [
       {
-        title: "steering wheel",
-        description: "programmed this lil guy, acts as primary driver control system and dash. controls drive state and acts as gateway for all vehicle data to be displayed.",      
-        tech: ["STM32", "FreeRTOS", "Goofy chinese screen"],
+        title: "car firmware",
+        description: "programmed this lil guy",      
+        tech: ["STM32", "FreeRTOS", "sensors"],
         images: [],
       },
       {
