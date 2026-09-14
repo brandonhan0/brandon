@@ -198,6 +198,16 @@ function BrowserWindow({
         onDoubleClick={toggleMaximize}
       >
            {/* Hide maximize on mobile (always fullscreen) */}
+        
+          <button
+            onClick={(e) => {
+              e.stopPropagation();
+              onClose();
+            }}
+            className={retroButton}
+            aria-label="Close"
+            title="Close"
+          >
           {!isMobile && (
             <button
               onClick={(e) => {
@@ -212,15 +222,6 @@ function BrowserWindow({
             </button>
           )}
 
-          <button
-            onClick={(e) => {
-              e.stopPropagation();
-              onClose();
-            }}
-            className={retroButton}
-            aria-label="Close"
-            title="Close"
-          >
             <X className="w-3.5 h-3.5 text-black" />
           </button>
         </div>
