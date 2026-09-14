@@ -197,13 +197,7 @@ function BrowserWindow({
         onMouseDown={handleMouseDown}
         onDoubleClick={toggleMaximize}
       >
-        <div className="flex items-center gap-2">
-          <div className="w-3 h-3 bg-white border border-black" />
-          <span className="text-[13px] font-bold tracking-tight">{title}</span>
-        </div>
-
-        <div className="flex items-center gap-1">
-          {/* Hide maximize on mobile (always fullscreen) */}
+           {/* Hide maximize on mobile (always fullscreen) */}
           {!isMobile && (
             <button
               onClick={(e) => {
@@ -230,6 +224,13 @@ function BrowserWindow({
             <X className="w-3.5 h-3.5 text-black" />
           </button>
         </div>
+        <div className="flex items-center gap-2">
+          <div className="w-3 h-3 bg-white border border-black" />
+          <span className="text-[13px] font-bold tracking-tight">{title}</span>
+        </div>
+
+        <div className="flex items-center gap-1">
+       
       </div>
 
       {/* Toolbar / address row */}
