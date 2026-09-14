@@ -187,52 +187,57 @@ function BrowserWindow({
       }}
       onMouseDown={onFocus}
     >
-      {/* Title bar */}
-      <div
-        className={[
-          "px-2 py-1 flex items-center justify-between",
-          isMobile || isMaximized ? "cursor-default" : "cursor-move",
-          "bg-[#000080] text-white border-b border-b-[#404040]",
-        ].join(" ")}
-        onMouseDown={handleMouseDown}
-        onDoubleClick={toggleMaximize}
+{/* Title bar */}
+<div
+  className={[
+    "px-2 py-1 flex items-center gap-2",
+    isMobile || isMaximized ? "cursor-default" : "cursor-move",
+    "bg-[#000080] text-white border-b border-b-[#404040]",
+  ].join(" ")}
+  onMouseDown={handleMouseDown}
+  onDoubleClick={toggleMaximize}
+>
+  {/* Desktop window controls */}
+  {!isMobile && (
+    <div className="flex shrink-0 items-center gap-1">
+      <button
+        type="button"
+        onClick={(e) => {
+          e.stopPropagation();
+          onClose();
+        }}
+        onDoubleClick={(e) => e.stopPropagation()}
+        className={retroButton}
+        aria-label="Close"
+        title="Close"
       >
-           {/* Hide maximize on mobile (always fullscreen) */}
-        
-          <button
-            onClick={(e) => {
-              e.stopPropagation();
-              onClose();
-            }}
-            className={retroButton}
-            aria-label="Close"
-            title="Close"
-          >
-          {!isMobile && (
-            <button
-              onClick={(e) => {
-                e.stopPropagation();
-                toggleMaximize();
-              }}
-              className={retroButton}
-              aria-label={isMaximized ? "Restore" : "Maximize"}
-              title={isMaximized ? "Restore" : "Maximize"}
-            >
-              <Maximize2 className="w-3.5 h-3.5 text-black" />
-            </button>
-          )}
+        <X className="w-3.5 h-3.5 text-black" />
+      </button>
 
-            <X className="w-3.5 h-3.5 text-black" />
-          </button>
-        </div>
-        <div className="flex items-center gap-2">
-          <div className="w-3 h-3 bg-white border border-black" />
-          <span className="text-[13px] font-bold tracking-tight">{title}</span>
-        </div>
+      <button
+        type="button"
+        onClick={(e) => {
+          e.stopPropagation();
+          toggleMaximize();
+        }}
+        onDoubleClick={(e) => e.stopPropagation()}
+        className={retroButton}
+        aria-label={isMaximized ? "Restore" : "Maximize"}
+        title={isMaximized ? "Restore" : "Maximize"}
+      >
+        <Maximize2 className="w-3.5 h-3.5 text-black" />
+      </button>
+    </div>
+  )}
 
-        <div className="flex items-center gap-1">
-       
-      </div>
+  {/* Window title */}
+  <div className="flex min-w-0 flex-1 items-center gap-2">
+    <div className="h-3 w-3 shrink-0 border border-black bg-white" />
+    <span className="truncate text-[13px] font-bold tracking-tight">
+      {title}
+    </span>
+  </div>
+</div>
 
       {/* Toolbar / address row */}
       <div className={["px-2 py-2 flex items-center gap-2", bevelInner].join(" ")}>
