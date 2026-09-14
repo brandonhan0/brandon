@@ -36,7 +36,7 @@ function WorkContent() {
         company: "calpoly racing",
         period: "2026 - now",
         description:
-          "design and oversee all firmware functions and interactions on vehicle, including vehicle control, vehicle saftey, and data accqusition.(I spend too much time here someone pls send help)",
+          "design and oversee all firmware functions and interactions on vehicle, including vehicle control, vehicle saftey, and data accqusition",
         achievements: [
           "headaches",
           "the hanger",
@@ -47,9 +47,9 @@ function WorkContent() {
       {
         role: "firmware project lead",
         company: "calpoly racing",
-        period: "2025 - now",
+        period: "2025 - 2026",
         description:
-          "leading subteam of firmware engineers to design and develop firmware for custom stm32 boards. working along side several other subsystems to design the best car for michigan FSAE compitition. unfortunately getting promoted next year, let me know if you are intrested in getting involved.",
+          "leading subteam of firmware engineers to design and develop firmware for custom stm32 boards. working along side several other subsystems to design the best car for michigan FSAE compitition. we won 7th overall this year!! super exciting!!",
         achievements: [
           "steering wheel + teaching",
           "stm32 + can",
@@ -60,7 +60,7 @@ function WorkContent() {
       {
         role: "software team member",
         company: "calpoly robotics",
-        period: "2024 - now",
+        period: "2024 - 2025",
         description:
           "working on the computer vision team for UROV, implemented software to autonomously map and localize an agent using opencv and slam, that was a pain in the butt and really sucked but was cool. wrote image stitching software that takes over 500 photos in real time and stitches them together to generate a interactable photosphere. built interactive ui dashboard for camera data and driver inputs. wrote vector matrix physics algorithms to control power sent to 6 different propellers on the urov, this was weird but bareable. wrote real time object identification and measurement algortihms using opencv",
         achievements: [
