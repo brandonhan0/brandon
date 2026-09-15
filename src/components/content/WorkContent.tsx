@@ -51,7 +51,7 @@ function WorkContent() {
         company: "lucid motors",
         period: "june 2026 - september 2026",
         description:
-          "motor characterization, motor modeling, thermal modeling, daq system design, sensor validation and calibration, circuit design simulation and validation, system integration, structural design, brakes, testing procedures, wire harnessing, HIL automation, in-house tool development, vector canoe, capl, ni daq, infotainment, saving money, fusion 360",
+          "i made so many friends here and all my coworkers were so awesome and i got to work on motor characterization, motor modeling, thermal modeling, daq system design, sensor validation and calibration, circuit design simulation and validation, system integration, structural design, brakes, testing procedures, wire harnessing, HIL automation, in-house tool development, vector canoe, capl, ni daq, infotainment, saving money, fusion 360",
         achievements: [
           "motors",
           "vector CANoe",
