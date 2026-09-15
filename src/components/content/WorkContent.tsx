@@ -34,7 +34,7 @@ function WorkContent() {
       {
         role: "firmware lead",
         company: "calpoly racing",
-        period: "2026 - now",
+        period: "june 2026 - now",
         description:
           "design and oversee all firmware functions and interactions on vehicle, including vehicle control, vehicle saftey, and data accqusition",
         achievements: [
@@ -45,9 +45,23 @@ function WorkContent() {
         image: racing,
       },
       {
-        role: "firmware project lead",
+        role: "vehicle software validation intern",
+        company: "lucid motors",
+        period: "june 2026 - september 2026",
+        description:
+          "motor characterization, motor modeling, thermal modeling, daq system design, sensor validation and calibration, circuit design simulation and validation, system integration, structural design, brakes, testing procedures, wire harnessing, HIL automation, in-house tool development, vector canoe, capl, ni daq, infotainment, saving money, fusion 360",
+        achievements: [
+          "motors",
+          "vector CANoe",
+          "fusion 360",
+          "circuits",
+        ],
+        image: ,
+      },
+      {
+        role: "electronics team member",
         company: "calpoly racing",
-        period: "2025 - 2026",
+        period: "september 2024 - june 2026",
         description:
           "leading subteam of firmware engineers to design and develop firmware for custom stm32 boards. working along side several other subsystems to design the best car for michigan FSAE compitition. we won 7th overall this year!! super exciting!!",
         achievements: [
@@ -60,7 +74,7 @@ function WorkContent() {
       {
         role: "software team member",
         company: "calpoly robotics",
-        period: "2024 - 2025",
+        period: "september 2024 - september 2025",
         description:
           "working on the computer vision team for UROV, implemented software to autonomously map and localize an agent using opencv and slam, that was a pain in the butt and really sucked but was cool. wrote image stitching software that takes over 500 photos in real time and stitches them together to generate a interactable photosphere. built interactive ui dashboard for camera data and driver inputs. wrote vector matrix physics algorithms to control power sent to 6 different propellers on the urov, this was weird but bareable. wrote real time object identification and measurement algortihms using opencv",
         achievements: [
@@ -73,7 +87,7 @@ function WorkContent() {
       {
         role: "coding instructor",
         company: "thecoderschool",
-        period: "2025",
+        period: "june 2025 - september 2025",
         description:
           "worked here over summer, had a good time teaching kids various applications of coding. taught python camps, minecraft camps, and game development camps. had 1 on 1 tutoring as well for clients who wanted help on personal projects.",
         achievements: ["python camps", "1:1 tutoring", "project-based teaching"],
@@ -82,7 +96,7 @@ function WorkContent() {
       {
         role: "section leader",
         company: "stanford",
-        period: "2025",
+        period: "april 2025 - june 2025",
         description:
           "spent a few months leading weekly coding sections for a program at stanford, taught college students how to program in python and its various library applications. was actually super cool i had students from many countries across the world and i feel very privallged to be able to work here.",
         achievements: ["teaching + leadership", "python + libraries", "global cohort"],
@@ -91,7 +105,7 @@ function WorkContent() {
       {
         role: "coding instructor",
         company: "tech rocks!",
-        period: "2018 - 2023",
+        period: "june 2018 - september 2023",
         description:
           "over breaks i taught kids voding fundamentals through scratch and code.org, i actually was a student here as well so it was fun. taught kids through minecraft modding and game design as well.",
         achievements: ["scratch/code.org", "minecraft modding", "game design"],
@@ -100,7 +114,7 @@ function WorkContent() {
       {
         role: "sales associate",
         company: "world market",
-        period: "2022 - 2023",
+        period: "november 2022 - april 2023",
         description: "cashier, stocking, customer help. coworkers were fun.",
         achievements: ["customer service", "stocking", "cashier"],
         image: wm ,
@@ -108,7 +122,7 @@ function WorkContent() {
       {
         role: "shift lead",
         company: "truedan",
-        period: "2021 - 2022",
+        period: "august 2021 - july 2022",
         description: "i made boba here and it was fun, made good friends and got free boba and enjoyed serving people",
         achievements: ["shift lead", "service + ops", "team coordination"],
         image: truedan,
@@ -116,7 +130,7 @@ function WorkContent() {
       {
         role: "soccer referee",
         company: "USSF",
-        period: "2016 - 2019",
+        period: "august 2016 - august 2019",
         description: "i was a soccer referee, i mainly refereed for youth soccer games lots of screaming parents yikes",
         achievements: ["decision making", "communication", "conflict management"],
         image: ussf,
