@@ -8,6 +8,8 @@ import coderschool from "../../assets/images/coderschool.png";
 import truedan from "../../assets/images/truedan.jpeg";
 import wm from "../../assets/images/wm.jpeg";
 import ussf from "../../assets/images/ussf.png";
+import lucid from "../../assets/images/lucid.jpeg";
+
 
 type WorkItem = {
   role: string;
@@ -56,7 +58,7 @@ function WorkContent() {
           "fusion 360",
           "circuits",
         ],
-        image: ,
+        image: lucid,
       },
       {
         role: "electronics team member",
