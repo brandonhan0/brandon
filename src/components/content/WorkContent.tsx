@@ -218,15 +218,15 @@ function WorkContent() {
             </div>
 
             <div className="bg-white p-4 text-black">
-              <div className="grid grid-cols-1 lg:grid-cols-[220px_1fr] gap-4">
+              <div className="flex flex-col items-start gap-4">
                 {/* image */}
-                <div className={["self-start bg-[#c0c0c0] p-2", bevelOuter].join(" ")}>
+                <div className={["w-full max-w-[520px] bg-[#c0c0c0] p-2", bevelOuter].join(" ")}>
                   <div className={["bg-white", bevelInner].join(" ")}>
                     {active.image ? (
                       <img
                         src={active.image}
                         alt={active.company}
-                        className="w-full h-[160px] object-cover"
+                        className="w-full max-h-[320px] object-cover"
                       />
                     ) : (
                       <div className="w-full h-[160px] flex items-center justify-center text-[12px] text-[#444]">
@@ -237,7 +237,7 @@ function WorkContent() {
                 </div>
 
                 {/* text */}
-                <div className="space-y-3">
+                <div className="w-full max-w-[75ch] space-y-3">
                   <p className="text-[14px] leading-relaxed">{active.description}</p>
 
 
