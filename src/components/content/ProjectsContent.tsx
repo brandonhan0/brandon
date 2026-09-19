@@ -179,16 +179,16 @@ function ProjectsContent() {
             </div>
 
             <div className="bg-white p-4 text-black">
-              <div className="grid grid-cols-1 lg:grid-cols-[260px_1fr] gap-4">
+              <div className="flex flex-col items-start gap-4">
                 {/* Image viewer */}
-                <div className="space-y-2">
+                <div className="w-full max-w-[520px] space-y-2">
                   <div className={["bg-[#c0c0c0] p-2", bevelOuter].join(" ")}>
                     <div className={["bg-white", bevelInner].join(" ")}>
                       {activeImage ? (
                         <img
                           src={activeImage}
                           alt={active.title}
-                          className="w-full h-[180px] object-cover"
+                          className="w-full h-[220px] md:h-[280px] object-cover"
                         />
                       ) : (
                         <div className="w-full h-[180px] flex items-center justify-center text-[12px] text-[#444]">
@@ -236,7 +236,7 @@ function ProjectsContent() {
                 </div>
 
                 {/* Text */}
-                <div className="space-y-3">
+                <div className="w-full max-w-[75ch] space-y-3">
                   <p className="text-[14px] leading-relaxed">{active.description}</p>
 
                   <div>
