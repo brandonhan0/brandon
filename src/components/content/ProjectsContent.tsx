@@ -11,7 +11,7 @@ import otter from "../../assets/images/image17.jpeg";
 import powder1 from "../../assets/images/image19.png";
 import powder2 from "../../assets/images/image20.png";
 import powder3 from "../../assets/images/image20.jpeg";
-
+import racing from "../../assets/images/DSC_0240.jpg";
 
 
 
