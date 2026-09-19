@@ -220,7 +220,7 @@ function WorkContent() {
             <div className="bg-white p-4 text-black">
               <div className="grid grid-cols-1 lg:grid-cols-[220px_1fr] gap-4">
                 {/* image */}
-                <div className={["bg-[#c0c0c0] p-2", bevelOuter].join(" ")}>
+                <div className={["self-start bg-[#c0c0c0] p-2", bevelOuter].join(" ")}>
                   <div className={["bg-white", bevelInner].join(" ")}>
                     {active.image ? (
                       <img
