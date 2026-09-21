@@ -38,10 +38,10 @@ function WorkContent() {
         company: "calpoly racing",
         period: "june 2026 - now",
         description:
-          "design and oversee all firmware functions and interactions on vehicle, including vehicle control, vehicle saftey, and data accqusition",
+          "responsible for design, development, and integration of all firmware functions and interactions on vehicle, including vehicle control, vehicle saftey, telemetry, and data accqusition",
         achievements: [
           "headaches",
-          "the hanger",
+          "stm32h5 + rpi4 + esp32",
           "guh",
         ],
         image: racing,
@@ -65,7 +65,7 @@ function WorkContent() {
         company: "calpoly racing",
         period: "september 2024 - june 2026",
         description:
-          "leading subteam of firmware engineers to design and develop firmware for custom stm32 boards. working along side several other subsystems to design the best car for michigan FSAE compitition. we won 7th overall this year!! super exciting!!",
+          "leading subteam of firmware engineers to develop firmware for custom stm32 boards. working along side several other subsystems to design the best car for michigan FSAE compitition. we won 7th overall this year!! super exciting!!",
         achievements: [
           "steering wheel + teaching",
           "stm32 + can",
