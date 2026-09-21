@@ -51,14 +51,6 @@ export default function ContactContent() {
         icon: <Linkedin className="w-4 h-4" />,
         stamp: "SOCIAL",
       },
-      {
-        id: "github",
-        label: "GitHub",
-        value: "github.com/brandonhan0",
-        href: "https://github.com/brandonhan0",
-        icon: <Github className="w-4 h-4" />,
-        stamp: "CODE",
-      },
     ],
     []
   );
